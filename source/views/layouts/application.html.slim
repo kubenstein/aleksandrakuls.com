@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    title Aleksandra Kuls
+    meta charset="utf-8"
+    meta content="CAC Wzornictwo" name="author"
+    link href="/assets/stylesheets/application.css" rel="stylesheet"
+    script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"
+    script src="/assets/javascripts/application.js"
+    /![if lt IE 9]
+      script src="http://html5shim.googlecode.com/svn/trunk/html5.js"
+
+body
+  #wrapper
+    header role="banner" 
+      a href="/" 
+        h1 Aleksandra Kuls
+    section#language role="language" 
+      = partial 'partials/languages'
+    #inner
+      #left
+        section#menu role="navigation"
+          = partial 'partials/main_menu'
+        section#news
+          = partial 'partials/news'
+
+      section#content role="content" 
+         = partial current_page.data.template
+    footer
+      | copyright © Aleksandra Kuls 2012

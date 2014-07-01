@@ -1,0 +1,33 @@
+---
+pl:
+  menu_biography: Biografia
+  menu_concerts: Koncerty
+  menu_reviews: Recenzje
+  menu_gallery: Galeria
+  menu_music: Muzyka
+  menu_contact: Kontakt
+
+
+en:
+  menu_biography: Biography
+  menu_concerts: Concerts
+  menu_reviews: Reviews
+  menu_gallery: Gallery
+  menu_music: Music
+  menu_contact: Contact
+
+---
+
+ul
+  li class=active_for_menu_item(:biography)
+    = link_to db.menu_biography, main_path
+  li class=active_for_menu_item(:concerts)
+    = link_to db.menu_concerts, 'concerts_path'
+  li class=active_for_menu_item(:reviews)
+    = link_to db.menu_reviews, reviews_path
+  li class=active_for_menu_item(:gallery)
+    = link_to db.menu_gallery, 'gallery_path'
+  li class=active_for_menu_item(:music)
+    = link_to db.menu_music, 'music_path'
+  li class=active_for_menu_item(:contact)
+    = link_to db.menu_contact, 'contact_path'
