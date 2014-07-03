@@ -17,7 +17,7 @@ class PartialFrontmatter
   private
 
   def path_to_partials
-    Dir['source/views/**/_*']
+    Dir['source/{views,pages}/**/_*']
   end
 
   def sorted_path_to_partials

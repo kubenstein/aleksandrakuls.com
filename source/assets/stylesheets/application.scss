@@ -211,16 +211,16 @@ section#content.repertory table td.first {
   width: 160px;
 }
 
-section#content.concerts table {
+section#content table.concerts {
   width: 660px;
 }
 
-section#content.concerts table tr td.date {
+section#content table.concerts tr td.date {
   width: 114px;
   vertical-align: top;
 }
 
-section#content.concerts a {
+section#content a.show_all_contacts {
   color: #C0AC8C;
   text-decoration: none;
   margin: -19px 0 20px 60px;

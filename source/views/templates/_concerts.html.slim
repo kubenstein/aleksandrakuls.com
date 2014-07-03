@@ -1,0 +1,10 @@
+= image_tag 'concerts.jpg'
+h3= db.title
+= link_to db.link_text, eval(db.link), class: 'show_all_contacts'
+table.concerts
+  tbody
+    - db.concerts.reject { |concert| concert.date.to_date < eval(db.since) }.each do |concert|
+      tr
+        td.date= concert.date
+        td= concert.text
+br.clear
