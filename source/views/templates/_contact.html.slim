@@ -1,5 +1,5 @@
 = image_tag 'contact.jpg'
-h3= db.title
-- db.text.split("\n\n").each do |paragraph|
-  p.small= paragraph.gsub("\n", '<br>')
+.contact
+  h3= db.title
+  = db.text.bbcode_to_html_with_formatting
 br.clear

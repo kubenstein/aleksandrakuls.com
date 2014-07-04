@@ -9,6 +9,7 @@ gem 'slim'
 gem 'recursive-open-struct'
 gem 'require_all'
 gem 'middleman-simple-thumbnailer'
+gem 'bb-ruby'
 
 gem 'puma'
 gem 'rake'

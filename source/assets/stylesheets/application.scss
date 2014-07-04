@@ -135,13 +135,6 @@ section#content p {
   padding: 0 60px 20px 60px;
   text-align: justify;
 }
-
-
-section#content p strong {
-  font-weight: 600;
-  font-weight: normal;
-  font-style: italic;
-}
   
 section#content p cite {
   font-style: italic;
@@ -262,11 +255,11 @@ section#content p.review a {
 }
 
 
-section#content p.small {
+section#content .contact p {
   padding: 10px 0 0 60px;
   font-size: 8pt;
 }
 
-section#content p a {
+section#content .contact p a {
   color: #c0aC8C;
 }
