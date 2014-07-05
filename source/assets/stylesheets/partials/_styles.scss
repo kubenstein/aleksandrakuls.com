@@ -1,0 +1,265 @@
+header, section, nav, article, footer, address {
+  display: block;
+}
+
+h1, h2, h3, h4, ol, ul, fieldset, p, body {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+br.clear {
+  clear: both;
+}
+
+body {
+  padding-top: 5px;
+  font-family: Verdana, Tahoma;
+  background: #111 image-url("layout/bg_gradient.png") repeat-x 0 0;
+}
+
+#wrapper {
+  width: 962px;
+  margin: 10px auto 0 auto;
+}
+
+header {
+  float: left;
+  padding: 0 0 10px 65px;
+  margin-bottom: 0px;
+}
+
+header a {
+  display: block;
+  width: 623px;
+  height: 101px;
+  background: image-url("layout/logo.png") no-repeat 0 0;
+  text-indent: -9999px;
+}
+
+header a h1 {
+  font-size: 44pt;
+}
+
+section#language {
+  float: right;
+  margin: 13px 25px 0 0;
+}
+
+section#language li a {
+  display: block;
+  width: 48px;
+  height: 36px;
+  padding-bottom: 3px;
+  text-indent: -9999px;
+}
+
+section#language li.pl a {
+   background: image-url("layout/pl.png") no-repeat 0 0;
+}
+
+section#language li.en a {
+   background: image-url("layout/en.png") no-repeat 0 0;
+}
+
+div#inner {
+  clear: both;
+  background: #202020 image-url("layout/menu_gradient.png") repeat-x 0 0;
+}
+
+div#left {
+  float: left;
+}
+
+section#menu {
+  width: 250px;
+}
+
+section#menu ul {
+  margin: 30px 0 0 10px;
+}
+
+section#menu ul li {
+  padding-bottom: 15px;
+}
+
+section#menu ul li a {
+  display: block;
+  padding-left: 55px;
+  font-size: 17pt;
+  text-decoration: none;
+  color: #7f7f7f;
+  letter-spacing: 3px;
+}
+
+section#menu ul li:hover a {
+  color: #fff;
+}
+
+section#menu ul li.active a {
+  color: #fff;
+  background: image-url("layout/menu_active.png") no-repeat 25px 50%;
+}
+    
+section#content {
+  width:712px;
+  margin-left: 250px;
+  color: #777;
+  font-size: 10pt;
+  font-family: Verdana, Tahoma;
+  background-color: #2d2d2d;
+}
+
+
+section#content h2.splash {
+  text-align: justify;
+  font-weight: normal;
+  margin: 20px;
+  padding: 5px;
+  border: 1px solid #777;
+}
+  
+section#content h3 {
+  width: 592px;
+  font-weight: normal;
+  font-size: 20pt;
+  letter-spacing: 10px;
+  color: #C0AC8C;
+  margin: 10px 0 20px 60px;
+}
+
+section#content p {
+  padding: 0 60px 20px 60px;
+  text-align: justify;
+}
+  
+section#content p cite {
+  font-style: italic;
+}
+
+section#news {
+  margin: 113px 0 0 34px;
+  clear: both;
+  width: 188px;
+  color: #666;
+}
+
+section#news h3 {
+  font-size: 10pt;
+  margin-bottom: 10px;
+}
+
+section#news p {
+  font-size: 10pt;
+  margin-bottom: 20px;
+}
+
+section#news p span {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 8pt;
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  color: #ACACAC;
+  background-color: #1A1A1A;
+  letter-spacing: 6px;
+  font-size: 10pt;
+  padding: 47px 0;
+}
+
+section#content table {
+  padding: 0 0 10px 60px;
+}
+
+
+section#content ul.music div.yt {
+  background-color: #1A1A1A;
+  margin: 0 auto;
+  padding: 11px 11px 8px 11px;
+  text-align: center;
+  width: 640px;
+}
+
+section#content ul.music li {
+  padding-top: 20px;
+}
+
+section#content ul.music h3 {
+  font-size: 16pt;
+}
+
+
+section#content.repertory h4 {
+  color: #c0aC8C;
+  padding: 10px 0 0 30px;
+}
+
+section#content.repertory table td.first {
+  width: 160px;
+}
+
+section#content table.concerts {
+  width: 660px;
+}
+
+section#content table.concerts tr td.date {
+  width: 114px;
+  vertical-align: top;
+}
+
+section#content a.show_all_contacts {
+  color: #C0AC8C;
+  text-decoration: none;
+  margin: -19px 0 20px 60px;
+  display: block;
+}
+
+section#content ul.gallery {
+  padding-top: 36px;
+}
+
+section#content ul.gallery li {
+  float: left;
+  margin-left: 73px;
+  line-height: 200px;
+  height: 200px;
+  padding-bottom: 40px;
+}
+
+
+section#content ul.gallery li a img {
+  border: 0 none;
+  width: 120px;
+  padding: 10px;
+  background-color: #1A1A1A;
+  vertical-align: middle
+}
+
+
+section#content p.review {
+  font-style: italic;
+  padding-bottom: 40px;
+}
+
+section#content p.review a {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: #c0aC8C;
+}
+
+
+section#content .contact p {
+  padding: 10px 0 0 60px;
+  font-size: 8pt;
+}
+
+section#content .contact p a {
+  color: #c0aC8C;
+}
