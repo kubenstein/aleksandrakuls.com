@@ -20,10 +20,12 @@ body
       #left
         section#menu role="navigation"
           = partial 'partials/main_menu'
+
         section#news
           = partial 'partials/news'
 
       section#content role="content" 
          = partial current_page.data.template
+         br.clear
     footer
       | copyright © Aleksandra Kuls 2012

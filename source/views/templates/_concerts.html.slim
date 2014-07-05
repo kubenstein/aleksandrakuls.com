@@ -3,11 +3,11 @@
 
 = image_tag 'concerts.jpg'
 h3= db.title
-= link_to db.link_text, eval(db.link), class: 'show_all_contacts'
-table.concerts
-  tbody
-    - concerts.each do |concert|
-      tr
-        td.date= concert.date
-        td= concert.text
-br.clear
+.concerts
+  = link_to db.link_text, eval(db.link), class: 'show_all_contacts'
+  table
+    tbody
+      - concerts.each do |concert|
+        tr
+          td.date= concert.date
+          td= concert.text

@@ -1,0 +1,12 @@
+header, section, nav, article, footer, address {
+  display: block;
+}
+
+h1, h2, h3, h4, ol, ul, fieldset, p, body {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
