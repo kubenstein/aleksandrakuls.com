@@ -1,13 +1,20 @@
-- concerts = db.concerts.reject { |concert| concert.date.to_date < eval(db.since) }
-
+- js_scope = db.scope == 'TODAY' ? 'new Date()' : 'new Date("01-01-1970")'
 
 = image_tag 'concerts.jpg'
 h3= db.title
 .concerts
   = link_to db.link_text, eval(db.link), class: 'show_all_contacts'
   table
-    tbody
-      - concerts.each do |concert|
-        tr
-          td.date= concert.date
-          td= concert.text
+    tbody#concerts
+
+javascript:
+  var concerts = #{db.concerts_as_a_hash.to_json};
+  var condition = function(concertObj) { return (new Date(concertObj.date) > #{js_scope} ) };
+  var template = function(date, text) { return "<tr><td class='date'>"+ date +"</td><td>"+ text +"</td></tr>" };
+
+  $(document).ready(function() {
+    var table = $('#concerts');
+    $.each(jQuery.grep(concerts, condition), function(_, concertObj) {
+      table.append(template(concertObj.date, concertObj.text));
+    });
+  })
