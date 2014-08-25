@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/kubenstein/www-redirect.git
+  revision: bb3982e66c5c2d38567782226236d294a4805396
+  ref: bb3982e66c5c2d38567782226236d294a4805396
+  specs:
+    www-redirect (0.0.2)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -57,7 +64,11 @@ GEM
       sprockets-helpers (~> 1.0.0)
       sprockets-sass (~> 1.0.0)
     multi_json (1.8.4)
+    puma (2.9.0)
+      rack (>= 1.1, < 2.0)
     rack (1.4.5)
+    rack-contrib (1.1.0)
+      rack (>= 0.9.1)
     rack-test (0.6.2)
       rack (>= 1.0)
     rake (10.2.2)
@@ -98,7 +109,10 @@ DEPENDENCIES
   middleman
   middleman-minify-html
   middleman-simple-thumbnailer
+  puma
+  rack-contrib
   rake
   recursive-open-struct
   require_all
   slim
+  www-redirect!
