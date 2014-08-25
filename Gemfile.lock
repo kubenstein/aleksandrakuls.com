@@ -1,10 +1,3 @@
-GIT
-  remote: https://github.com/kubenstein/www-redirect.git
-  revision: bb3982e66c5c2d38567782226236d294a4805396
-  ref: bb3982e66c5c2d38567782226236d294a4805396
-  specs:
-    www-redirect (0.0.2)
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -100,6 +93,7 @@ GEM
     uglifier (2.1.2)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
+    www-redirect (0.0.3)
 
 PLATFORMS
   ruby
@@ -115,4 +109,4 @@ DEPENDENCIES
   recursive-open-struct
   require_all
   slim
-  www-redirect!
+  www-redirect
