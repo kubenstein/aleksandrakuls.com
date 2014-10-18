@@ -2,6 +2,27 @@
 
 pl:
   concerts:
+    -
+      date: 2014-12-08
+      text: "Krakow, Felix Mendelssohn Violin Concerto E minor, director Yan Pascal Tortelier, the Krakow Academy Symphony Orchestra"
+    -
+      date: 2014-11-29
+      text: "w Chamber Hall of Liszt Ferenc Memorial Museum, w cyklu Matinée Concerts, recital z Miho Morimoto"
+    -
+      date: 2014-11-28
+      text: "w Concert Hall of Danube Palace w Budapeszcie, Koncert Wieniawskiego d-moll, dyr. András Deák, Danube Symphony Orchestra"
+    -
+      date: 2014-11-16
+      text: "recital w Xiqu Theatre w Pekinie"
+    -
+      date: 2014-11-14
+      text: "w Forbidden City Concert Hall w Pekinie, Koncert Wieniawskiego d-moll, dyr. Yang Yang, China Philharmonic Orchestra"
+    -
+      date: 2014-10-27
+      text: "w Operze Narodowej w Warszawie, Gala inaugurująca otwarcie Muzeum Historii Żydów Polskich, Koncert skrzypcowy Ignacego Waghaltera, dyr. Andres Mustonen, Orkiestra Sinfonia Varsovia"
+    -
+      date: 2014-10-24
+      text: "Hagia Eirene Museum w Stambule, Koncert skrzypcowy M.Karłowicza, dyr. Tadeusz Strugała, the Istanbul State Symphony Orchestra"
     - 
       date: 2014-08-27
       text: "Na festiwalu Chopin i jego Europa w Warszawie, Koncert skrzypcowy Andrzeja Panufnika, dyr. Jerzy Maksymiuk, Orkiestra Sinfonia Varsovia"
@@ -122,6 +143,27 @@ pl:
 
 en:
   concerts:
+    -
+      date: 2014-12-08
+      text: "ICE Krakow Congress Centre, Koncert skrzypcowy e-moll Mendelssohna, dyr. Yan Pascal Tortelier, Orkiestra Symfoniczna Akademii Muzycznej w Krakowie"
+    -
+      date: 2014-11-29
+      text: "Chamber Hall of Liszt Ferenc Memorial Museum, Matinée Concerts, recital with Miho Morimoto"
+    -
+      date: 2014-11-28
+      text: "Concert Hall of Danube Palace, Budapest, Henryk Wieniawski Concerto in D minor, conductor András Deák, Danube Symphony Orchestra"
+    -
+      date: 2014-11-16
+      text: "recital in Beijing Xiqu Theatre"
+    -
+      date: 2014-11-14
+      text: "Forbidden City Concert Hall in Beijing, Henryk Wieniawski Concerto in D minor, Yang Yang, China Philharmonic Orchestra"
+    -
+      date: 2014-10-27
+      text: "the National Opera Theatre in Warsaw, Open Gala Concert of the Museum of the History of Polish Jews, Ignatz  Waghalter Violin Concerto, conductor Andres Mustonen, Sinfonia Varsovia Orchestra"
+    -
+      date: 2014-10-24
+      text: "Istanbul Hagia Eirene Museum, Mieczyslaw Karlowicz Violin Concerto A major, conductor Tadeusz Strugała, the Istanbul State Symphony Orchestra"
     - 
       date: 2014-08-27
       text: ""
