@@ -9,12 +9,12 @@ h3= db.title
 
 javascript:
   var concerts = #{db.concerts_as_a_hash.to_json};
-  var condition = function(concertObj) { return (new Date(concertObj.date) > #{js_scope} ) };
-  var template = function(date, text) { return "<tr><td class='date'>"+ date +"</td><td>"+ text +"</td></tr>" };
+  var condition = function(concertObj) { return (new Date(concertObj.date) > #{js_scope}) };
+  var template = function(concertObj) { return "<tr><td class='date'>"+ concertObj.date +"</td><td>"+ concertObj.text +"</td></tr>" };
 
   $(document).ready(function() {
     var table = $('#concerts');
     $.each(jQuery.grep(concerts, condition), function(_, concertObj) {
-      table.append(template(concertObj.date, concertObj.text));
+      table.append(template(concertObj));
     });
   })
