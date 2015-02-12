@@ -3,6 +3,30 @@
 pl:
   concerts:
     -
+      date: 2015-08-19
+      text: "Warszawa, Festiwal Chopin i jego Europa, recital z Marcinem Koziakiem (Paderewski, Wieniawski)"
+    -
+      date: 2015-08-16
+      text: "Zamek w Pieskowej Skale, Koncert skrzypcowy Sofii Gubaiduliny, dyr. Marek Moś"
+    -
+      date: 2015-03-21
+      text: "Zakopane, półrecital z Marcinem Koziakiem w willi Atma (Szymanowski, Wieniawski)"
+    -
+      date: 2015-02-18
+      text: "Katowice, sala kameralna NOSPR, godz 19:30 - recital z Justyną Danczowską (Schubert, Beethoven, Wieniawski, Szymanowski)"
+    -
+      date: 2015-02-18
+      text: "Katowice, sala NOSPR, godz. 12 - Koncert skrzypcowy Jeana Sibeliusa, część trzecia podczas Koncertu Edukacyjnego, orkiestra NOSPR, dyr. Rafał Janiak"
+    -
+      date: 2015-02-08
+      text: "udział w koncercie w Europejskim Centrum Muzyki K.Pendereckiego w Lusławicach podczas warsztatów Krajowego Funduszu na Rzecz Dzieci (Wieniawski, Bartok)"
+    -
+      date: 2015-01-22
+      text: "półrecital z Justyną Danczowską w księgarnii muzycznej Kurant podczas spotkania z Kają Danczowską (Wieniawski, Szymanowski, Bartok, Kreisler)"
+    -
+      date: 2015-01-17
+      text: "recital z Marcinem Koziakiem w Domu Muzyka Seniora w Kątach (Haendel, Beethoven, Wieniawski, Kreisler, Szymanowski)"
+    -
       date: 2014-12-08
       text: "Krakow, Felix Mendelssohn Violin Concerto E minor, director Yan Pascal Tortelier, the Krakow Academy Symphony Orchestra"
     -
@@ -143,6 +167,30 @@ pl:
 
 en:
   concerts:
+    -
+      date: 2015-08-19
+      text: ""
+    -
+      date: 2015-08-16
+      text: ""
+    -
+      date: 2015-03-21
+      text: ""
+    -
+      date: 2015-02-18
+      text: ""
+    -
+      date: 2015-02-18
+      text: ""
+    -
+      date: 2015-02-08
+      text: ""
+    -
+      date: 2015-01-22
+      text: ""
+    -
+      date: 2015-01-17
+      text: ""
     -
       date: 2014-12-08
       text: "ICE Krakow Congress Centre, Koncert skrzypcowy e-moll Mendelssohna, dyr. Yan Pascal Tortelier, Orkiestra Symfoniczna Akademii Muzycznej w Krakowie"
