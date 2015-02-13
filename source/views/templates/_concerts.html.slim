@@ -5,15 +5,16 @@ h3= db.title
 .concerts
   = link_to db.link_text, eval(db.link), class: 'show_all_contacts'
   table
-    tbody#concerts
+    tbody#js-concerts
 
 javascript:
   var concerts = #{db.concerts_as_a_hash.to_json};
+  var classForPastConcert = function(concert) { return (new Date(concert.date) < new Date()) ? 'past' : 'incomming' };
   var condition = function(concert) { return (new Date(concert.date) > #{js_scope}) };
-  var template = function(concert) { return "<tr><td class='date'>"+ concert.date +"</td><td>"+ concert.text +"</td></tr>" };
+  var template = function(concert) { return "<tr class='"+ classForPastConcert(concert) +"'><td class='date'>"+ concert.date +"</td><td>"+ concert.text +"</td></tr>" };
 
   $(document).ready(function() {
-    var table = $('#concerts');
+    var table = $('#js-concerts');
     $.each(jQuery.grep(concerts, condition), function(_, concert) {
       table.append(template(concert));
     });

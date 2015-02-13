@@ -58,9 +58,17 @@ ul.music {
 .concerts {
   table {
     width: 660px;
-    tr td.date {
+    td.date {
       width: 114px;
       vertical-align: top;
+    }
+
+    .past td {
+      border-top: 1px solid #C0AC8C;
+    }
+
+    .past ~ .past td {
+      border: none;
     }
   }
   a.show_all_contacts {
