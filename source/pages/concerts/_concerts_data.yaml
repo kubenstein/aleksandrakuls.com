@@ -3,14 +3,23 @@
 pl:
   concerts:
     -
+      date: 2015-09-12
+      text: "Trondheim, I Koncert Skrzypcowy Karola Szymanowskiego, dyr. Michał Dworzyński, Orkiestra Symfoniczna Filharmonii Krakowskiej"
+    -
       date: 2015-08-19
       text: "Warszawa, Festiwal Chopin i jego Europa, recital z Marcinem Koziakiem (Paderewski, Wieniawski)"
     -
-      date: 2015-08-16
+      date: 2015-08-15
       text: "Zamek w Pieskowej Skale, Koncert skrzypcowy Sofii Gubaiduliny, dyr. Marek Moś"
     -
       date: 2015-03-21
       text: "Zakopane, półrecital z Marcinem Koziakiem w willi Atma (Szymanowski, Wieniawski)"
+    -
+      date: 2015-03-18
+      text: "Sochaczew, recital z Justyną Danczowską podczas XV Międzynarodowego Konkursu Skrzypcowego 'Janko Muzykant' (Beethoven, Wieniawski, Szymanowski)"
+    -
+      date: 2015-02-22
+      text: "półrecital z Justyną Danczowską w księgarnii muzycznej Kurant podczas spotkania z Kają Danczowską (Wieniawski, Szymanowski, Bartok, Kreisler)"
     -
       date: 2015-02-18
       text: "Katowice, sala kameralna NOSPR, godz 19:30 - recital z Justyną Danczowską (Schubert, Beethoven, Wieniawski, Szymanowski)"
@@ -20,9 +29,6 @@ pl:
     -
       date: 2015-02-08
       text: "udział w koncercie w Europejskim Centrum Muzyki K.Pendereckiego w Lusławicach podczas warsztatów Krajowego Funduszu na Rzecz Dzieci (Wieniawski, Bartok)"
-    -
-      date: 2015-01-22
-      text: "półrecital z Justyną Danczowską w księgarnii muzycznej Kurant podczas spotkania z Kają Danczowską (Wieniawski, Szymanowski, Bartok, Kreisler)"
     -
       date: 2015-01-17
       text: "recital z Marcinem Koziakiem w Domu Muzyka Seniora w Kątach (Haendel, Beethoven, Wieniawski, Kreisler, Szymanowski)"
@@ -168,29 +174,35 @@ pl:
 en:
   concerts:
     -
-      date: 2015-08-19
-      text: ""
+      date: 2015-09-12
+      text: "Trondheim, Karol Szymanowski 1st Violin Concerto, conductor: Michal Dworzynski, Krakow Philharmonic Symphony Orchestra"  
     -
-      date: 2015-08-16
-      text: ""
+      date: 2015-08-19
+      text: "Warsaw, Chopin and his Europe Festival, recital with Marcin Koziak (Paderewski, Wieniawski, Debussy)"
+    -
+      date: 2015-08-15
+      text: "Pieskowa Skała, Sofia Gubaidulina Violin Concerto, maestro Marek Moś"
     -
       date: 2015-03-21
-      text: ""
+      text: "Zakopane, performance with Marcin Koziak in 'Atma' (Wieniawski, Szymanowski)"
+    -
+      date: 2015-03-18
+      text: "Sochaczew, recital with Justyna Danczowska during 'Janko Muzykant' Violin Competition (Beethoven, Wieniawski, Szymanowski)"
+    -
+      date: 2015-02-22
+      text: "performance with Justyna Danczowska during Kaja Danczowska's Anniversary Meeting in Kurant music bookshop (Wieniawski, Szymanowski, Bartok, Kreisler)"
     -
       date: 2015-02-18
-      text: ""
+      text: "Katowice, NOSPR chamber hall, 19:30 recital with Justyna Danczowska (Schubert, Beethoven, Wieniawski, Szymanowski)"
     -
       date: 2015-02-18
-      text: ""
+      text: "Katowice, NOSPR concert hall, 12:00, Jean Sibelius Violin Concerto, finale, Educational Concert, conductor: Rafał Janiak, NOSPR Orchestra"
     -
       date: 2015-02-08
-      text: ""
-    -
-      date: 2015-01-22
-      text: ""
+      text: "Performance in the K.Penderecki European Centre for Music in Lusławice during the workshops of the Polish Children Fund (Wieniawski, Bartok)"
     -
       date: 2015-01-17
-      text: ""
+      text: "Recital with Marcin Koziak in Kąty near Warsaw (Haendel, Beethoven, Wieniawski, Kreisler, Szymanowski)"
     -
       date: 2014-12-08
       text: "ICE Krakow Congress Centre, Koncert skrzypcowy e-moll Mendelssohna, dyr. Yan Pascal Tortelier, Orkiestra Symfoniczna Akademii Muzycznej w Krakowie"
