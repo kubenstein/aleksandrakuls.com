@@ -3,8 +3,20 @@
 pl:
   concerts:
     -
-      date: 2015-09-12
-      text: "Trondheim, I Koncert Skrzypcowy Karola Szymanowskiego, dyr. Michał Dworzyński, Orkiestra Symfoniczna Filharmonii Krakowskiej"
+      date: 2016-02-25
+      text: "Pamplona, Spain, Palacio de Congresos y Auditorio de Navarra, M. Karłowicz Violin Concerto, maestro Antoni Wit, Orquesta Sinfónica de Navarra"
+    -
+      date: 2016-02-05
+      text: "Ferrol, Hiszpania, Teatro Jofre de Ferrol, Koncert skrzypcowy M. Karłowicza, dyr. Antoni Wit, ork. Real Filharmonia de Galicia"
+    -
+      date: 2016-02-04
+      text: "Santiago de Compostela, Hiszpania, Auditorio de Galicia, Koncert skrzypcowy M. Karłowicza, dyr. Antoni Wit, ork. Real Filharmonia de Galicia"
+    -
+      date: 2015-12-13
+      text: "Kraków, Centrum Kultury Żydowskiej, recital z Marcinem Koziakiem"
+    -
+      date: 2015-08-15
+      text: "Pieskowa Skała, Koncert skrzypcowy Sofii Gubaiduliny 'Offertorium', dyr. Marek Moś, ork. CORda CRACOVIA"
     -
       date: 2015-08-19
       text: "Warszawa, Festiwal Chopin i jego Europa, recital z Marcinem Koziakiem (Paderewski, Wieniawski)"
@@ -53,129 +65,141 @@ pl:
     -
       date: 2014-10-24
       text: "Hagia Eirene Museum w Stambule, Koncert skrzypcowy M.Karłowicza, dyr. Tadeusz Strugała, the Istanbul State Symphony Orchestra"
-    - 
+    -
       date: 2014-08-27
       text: "Na festiwalu Chopin i jego Europa w Warszawie, Koncert skrzypcowy Andrzeja Panufnika, dyr. Jerzy Maksymiuk, Orkiestra Sinfonia Varsovia"
-    - 
+    -
       date: 2014-06-24
       text: "W Operze Narodowej w Warszawie, koncert muzyki Eugeniusza Knapika. Partita w wykonaniu E. Knapika i A. Kuls"
-    - 
+    -
       date: 2014-05-16
       text: "w Filharmonii w Szczecinie, Koncert skrzypcowy H.Wieniawskiego, dyr. Michał Dworzyński, Orkiestra Akademii Beethovenowskiej"
-    - 
+    -
       date: 2014-05-14
       text: "w Filharmonii Pomorskiej w Bydgoszczy, Koncert skrzypcowy W.A.Mozarta G-dur KV.216 oraz Koncert skrzypcowy A.Panufnika, dyr. Jakub Chrenowicz, Orkiestra Kameralna Capella Bydgostiensis"
-    - 
+    -
       date: 2014-02-22
       text: "w Filharmonii Narodowej w Warszawie, I Koncert Szymanowskiego, dyr. Jacek Kaspszyk, orkiestra FN"
-    - 
+    -
       date: 2014-02-21
       text: "w Filharmonii Narodowej w Warszawie, I Koncert Szymanowskiego, dyr. Jacek Kaspszyk, orkiestra FN"
-    - 
+    -
       date: 2014-02-07
       text: "na Zamku Królewskim w Warszawie, udział w koncercie podczas Festiwalu Witolda Lutosławskiego Łańcuch XI, Partita Witolda Lutosławskiego wraz z Eugeniuszem Knapikiem"
-    - 
+    -
       date: 2014-01-16
       text: "Zakopane, Recital z Marcinem Koziakiem w willi 'Atma'"
-    - 
+    -
       date: 2014-01-10
       text: "w Filharmonii Krakowskiej, I Koncert Szymanowskiego, dyr. Antoni Wit, orkiestra FK"
-    - 
+    -
       date: 2013-11-29
       text: "w Katowicach, Koncert Podwójny Krzysztofa Pendereckiego, altówka: Ryszard Groblewski, dyr. Krzysztof Penderecki, orkiestra NOSPR"
-    - 
+    -
       date: 2013-11-17
       text: "w Miami na Florydzie, koncert muzyki poskiej z Marcinem Koziakiem"
-    - 
+    -
       date: 2013-11-11
       text: "w Mediolanie, koncert kameralny z Marcinem Koziakiem"
-    - 
+    -
       date: 2013-10-12
       text: "w Filharmonii Krakowskiej, koncert kwintetu w składzie Aleksandra Kuls, Barbara Mglej, Magdalena Chmielowiec, Aleksandra Lelek, Piotr Kosiński, w programie dwa kwintety fortepianowe: Juliusza Zarębskiego i Sergieja Taniejewa."
-    - 
+    -
       date: 2013-10-04
       text: "Lublin, Koncert H.Wieniawskiego d-moll, dyr. Wojciech Rodek, Orkiestra Symfoniczna Filharmonii Lubelskiej"
-    - 
+    -
       date: 2013-05-24
       text: "w Filharmonii Krakowskiej, Koncert Podwójny Krzysztofa Pendereckiego, altówka: Ryszard Groblewski, dyr. Marek Moś, orkiestra FK"
-    - 
+    -
       date: 2013-05-18
       text: "w Bochni, koncert kameralny z Aleksandrą Krawczyk"
-    - 
+    -
       date: 2013-05-16
       text: "w Toruniu, Koncert Podwójny Krzysztofa Pendereckiego, dyr. Krzysztof Penderecki"
-    - 
+    -
       date: 2013-05-09
       text: "w Filharmonii Narodowej w Warszawie, I Koncert skrzypcowy D-dur Prokofiewa, dyr. Wojciech Rodek, Orkiestra Symfoniczna Filharmonii Lubelskiej"
-    - 
+    -
       date: 2013-03-15
       text: "Olsztyn, Koncert Prokofiewa D-dur, Orkiestra Symfoniczna Filharmonii Warmińsko-Mazurskiej, dyrygent: Oleg Zverev"
-    - 
+    -
       date: 2013-01-05
       text: "Wieliczka Koncert Noworoczny w Kopalni Soli, Fundacja Pro Musica Bona"
-    - 
+    -
       date: 2012-12-07
       text: "Opole, M.Karłowicz – Koncert skrzypcowy A-dur"
-    - 
+    -
       date: 2012-11-28
       text: "Warszawa, Koncert muzyki polskiej na jubileuszu Senatu (koncert zamknięty)"
-    - 
+    -
       date: 2012-11-26
       text: "Szombathely, Węgry, recital z Justyną Danczowską"
-    - 
+    -
       date: 2012-11-22
       text: "Kraków, recital w sali Florianka z Justyną Danczowską"
-    - 
+    -
       date: 2012-11-21
       text: "Kraków, recital w Klubie Adwokatów z Justyną Danczowską"
-    - 
+    -
       date: 2012-11-18
       text: "Kraków, Koncert Fundacji Pro Musica Bona, Szkoła im. Żeleńskiego"
-    - 
+    -
       date: 2012-10-28
       text: "Katowice, Akademia Muzyczna, Agencja Silesia, duet z Justyną Danczowską"
-    - 
+    -
       date: 2012-10-20
       text: "Sanok, J.Brahms - Koncert skrzypcowy D-dur, Filharmonia Podkarpacka, dyrygent: Stanisław Krawczyński"
-    - 
+    -
       date: 2012-10-19
       text: "Rzeszów, J.Brahms – Koncert skrzypcowy D-dur, Filharmonia Podkarpacka. Dyrygent: Stanisław Krawczyński"
-    - 
+    -
       date: 2012-10-12
       text: "Zielona Góra, H.Wieniawski – Koncert skrzypcowy d-moll"
-    - 
+    -
       date: 2012-30-09
       text: "Kraków, Koncert Bachowski w Kościele św. Marcina."
-    - 
+    -
       date: 2012-28-09
       text: "Toruń, H.Wieniawski - Koncert skrzypcowy d-moll, Dwór Artusa, Toruńska Orkiestra Symfoniczna, dyrygent: Jerzy Swoboda"
-    - 
+    -
       date: 2012-02-09
       text: "Sokołów Podlaski, K.Szymanowski – I Koncert skrzypcowy, Orkiestra Symfoniczna Filharmonii Narodowej, dyrygent: Antoni Wit"
-    - 
+    -
       date: 2012-08-27
       text: "Kraków, Festiwal Muzyka w starym Krakowie, recital, duet z Aleksandrą Krawczyk"
-    - 
+    -
       date: 2012-08-26
       text: "Warszawa, Festiwal Chopin i jego Europa, H.Wieniawski – Koncert skrzypcowy d-moll, dyrygent: Michał Dworzyński"
-    - 
+    -
       date: 2012-08-20
       text: "Katowice, Koncert duetów, Agencja artystyczna 'Silesia', duet z Aleksandrą Krawczyk"
-    - 
+    -
       date: 2012-08-05
       text: "Curitiba-Brazylia, H.Wieniawski - Koncert skrzypcowy d-moll, ORQUESTRA SINFÔNICA DO PARANÁ, dyrygent: Antoni Wit."
-    - 
+    -
       date: 2012-06-23
       text: "Warszawa, Letnie Recitale na Grochowskiej, fortepian: Justyna Danczowska"
-    - 
+    -
       date: 2012-05-09
       text: "Warszawa, Filharmonia Narodowa, Koncert Prokofiewa D-dur, Orkiestra Symfoniczną Filharmonii Lubelskiej, dyrygent: Wojciech Rodek"
 
 en:
   concerts:
     -
-      date: 2015-09-12
-      text: "Trondheim, Karol Szymanowski 1st Violin Concerto, conductor: Michal Dworzynski, Krakow Philharmonic Symphony Orchestra"  
+      date: 2016-02-25
+      text: "Pamplona, Spain, Palacio de Congresos y Auditorio de Navarra, M. Karłowicz Violin Concerto, maestro Antoni Wit, Orquesta Sinfónica de Navarra"
+    -
+      date: 2016-02-05
+      text: "Ferrol, Spain, Teatro Jofre de Ferrol, M. Karłowicz Violin Concerto, maestro Antoni Wit, orchestra Real Filharmonia de Galicia"
+    -
+      date: 2016-02-04
+      text: "Santiago de Compostela, Spain, Auditorio de Galicia, M. Karłowicz Violin Concerto, maestro Antoni Wit, orchestra Real Filharmonia de Galicia"
+    -
+      date: 2015-12-13
+      text: "Krakow, Center For Jewish Culture, recital with Marcin Koziak"
+    -
+      date: 2015-08-15
+      text: "Pieskowa Skała, Sofia Gubaidulina Violin Concerto 'Offertorium', maestro Marek Moś, orchestra CORda CRACOVIA"
     -
       date: 2015-08-19
       text: "Warsaw, Chopin and his Europe Festival, recital with Marcin Koziak (Paderewski, Wieniawski, Debussy)"
@@ -224,7 +248,7 @@ en:
     -
       date: 2014-10-24
       text: "Istanbul Hagia Eirene Museum, Mieczyslaw Karlowicz Violin Concerto A major, conductor Tadeusz Strugała, the Istanbul State Symphony Orchestra"
-    - 
+    -
       date: 2014-08-27
       text: ""
     -
