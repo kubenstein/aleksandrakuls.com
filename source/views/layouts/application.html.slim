@@ -11,20 +11,22 @@ html
   = partial 'partials/ga'
 body
   #wrapper
-    header role="banner" 
-      a href="/" 
+    header role="banner"
+      a href="/"
         h1 Aleksandra Kuls
-    section#language role="language" 
+    section#language role="language"
       = partial 'partials/languages'
     #inner
       #left
         section#menu role="navigation"
           = partial 'partials/main_menu'
 
+        = image_tag 'bethoven_brahms_massenet.jpg', style: 'margin: 186px auto 0 auto; display: block', resize_to: '220x'
+
         section#news
           = partial 'partials/news'
 
-      section#content role="content" 
+      section#content role="content"
          = partial current_page.data.template
          br.clear
     footer
