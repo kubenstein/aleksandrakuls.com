@@ -3,6 +3,9 @@
 pl:
   concerts:
     -
+      date: 2016-03-19
+      text: "Warszawa, Opera Narodowa, recital z cyklu 'Preludium premierowe', Sonata Richarda Straussa z Nelsonem Goernerem"
+    -
       date: 2016-02-25
       text: "Pamplona, Spain, Palacio de Congresos y Auditorio de Navarra, M. Karłowicz Violin Concerto, maestro Antoni Wit, Orquesta Sinfónica de Navarra"
     -
@@ -11,6 +14,9 @@ pl:
     -
       date: 2016-02-04
       text: "Santiago de Compostela, Hiszpania, Auditorio de Galicia, Koncert skrzypcowy M. Karłowicza, dyr. Antoni Wit, ork. Real Filharmonia de Galicia"
+    -
+      date: 2015-12-16
+      text: "Wrocław, Narodowe Forum Muzyki, Koncert skrzypcowy Andrzeja Panufnika, dyr. Krzysztof Penderecki, orkiestra Leopoldinum"
     -
       date: 2015-12-13
       text: "Kraków, Centrum Kultury Żydowskiej, recital z Marcinem Koziakiem"
@@ -186,6 +192,9 @@ pl:
 en:
   concerts:
     -
+      date: 2016-03-19
+      text: "Warsaw, National Opera, 'Premiere preludes: Strauss', recital, Richard Strauss Violin Sonata, Nelson Goerner"
+    -
       date: 2016-02-25
       text: "Pamplona, Spain, Palacio de Congresos y Auditorio de Navarra, M. Karłowicz Violin Concerto, maestro Antoni Wit, Orquesta Sinfónica de Navarra"
     -
@@ -195,6 +204,9 @@ en:
       date: 2016-02-04
       text: "Santiago de Compostela, Spain, Auditorio de Galicia, M. Karłowicz Violin Concerto, maestro Antoni Wit, orchestra Real Filharmonia de Galicia"
     -
+      date: 2015-12-16
+      text: "Wrocław, National Forum Of Music, Andrzej Panufnik Violin Concerto, maestro Krzysztof Penderecki, Leopoldinum Chamber Orchestra"
+
       date: 2015-12-13
       text: "Krakow, Center For Jewish Culture, recital with Marcin Koziak"
     -
