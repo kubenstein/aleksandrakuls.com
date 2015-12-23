@@ -1,0 +1,18 @@
+---
+pl:
+  news_text: |
+    W ostatnich miesiącach ukazała się debiutancka płyta Aleksandry Kuls z Justyną Danczowską dla firmy DUX!
+    W programie płyty Sonata 'Kreutzerowska' Beethovena, III Sonata Brahmsa oraz Medytacja Masseneta.
+
+
+en:
+  news_text: |
+    The debut CD of Aleksandra Kuls with Justyna Danczowska was just released!
+
+    The programme:
+    Beethoven - "Kreutzer" Sonata, Brahms - 3rd Sonata, Massenet - Meditation
+
+---
+
+= image_tag 'bethoven_brahms_massenet.jpg', style: 'margin: 186px 0 5px 0; display: block', resize_to: '230x'
+p= db.news_text.gsub("\n", '<br>')
