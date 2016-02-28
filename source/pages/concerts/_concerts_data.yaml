@@ -3,7 +3,10 @@
 pl:
   concerts:
     -
-      date: 2016-03-19
+      date: 2016-04-16
+      text: Warszawa, Polskie Radio, audycja z cyklu "Five o'clock", recital z Justyną Danczowską
+    -
+      date: 2016-03-18
       text: "Warszawa, Opera Narodowa, recital z cyklu 'Preludium premierowe', Sonata Richarda Straussa z Nelsonem Goernerem"
     -
       date: 2016-02-25
@@ -192,7 +195,10 @@ pl:
 en:
   concerts:
     -
-      date: 2016-03-19
+      date: 2016-04-16
+      text: Warsaw, Polish Radio, "Five o'clock" broadcast, recital with Justyna Danczowska
+    -
+      date: 2016-03-18
       text: "Warsaw, National Opera, 'Premiere preludes: Strauss', recital, Richard Strauss Violin Sonata, Nelson Goerner"
     -
       date: 2016-02-25
