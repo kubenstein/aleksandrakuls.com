@@ -3,6 +3,9 @@
 pl:
   concerts:
     -
+      date: 2016-11-20
+      text: Katowice, Międzynarodowy Festiwal Muzyki Kameralnej Kwartet Śląski i jego goście, Partita na skrzypce i fortepian Eugeniusza Knapika, wykonanie z kompozytorem
+    -
       date: 2016-04-16
       text: Warszawa, Polskie Radio, audycja z cyklu "Five o'clock", recital z Justyną Danczowską
     -
@@ -10,7 +13,7 @@ pl:
       text: "Warszawa, Opera Narodowa, recital z cyklu 'Preludium premierowe', Sonata Richarda Straussa z Nelsonem Goernerem"
     -
       date: 2016-02-25
-      text: "Pamplona, Spain, Palacio de Congresos y Auditorio de Navarra, M. Karłowicz Violin Concerto, maestro Antoni Wit, Orquesta Sinfónica de Navarra"
+      text: "Pampeluna, Hiszpania, Palacio de Congresos y Auditorio de Navarra, Koncert skrzypcowy M.Karłowicza, dyr. Antoni Wit, Orquesta Sinfónica de Navarra"
     -
       date: 2016-02-05
       text: "Ferrol, Hiszpania, Teatro Jofre de Ferrol, Koncert skrzypcowy M. Karłowicza, dyr. Antoni Wit, ork. Real Filharmonia de Galicia"
@@ -194,6 +197,9 @@ pl:
 
 en:
   concerts:
+    -
+      date: 2016-11-20
+      text: Katowice, International Chamber Music Festival 'The Silesian String Quartet and guests', Eugeniusz Knapik - Partita for violin and piano, performance with the composer
     -
       date: 2016-04-16
       text: Warsaw, Polish Radio, "Five o'clock" broadcast, recital with Justyna Danczowska
