@@ -111,5 +111,8 @@ DEPENDENCIES
   slim
   www-redirect
 
+RUBY VERSION
+   ruby 2.0.0p645
+
 BUNDLED WITH
-   1.10.3
+   1.13.1
