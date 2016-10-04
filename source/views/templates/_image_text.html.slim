@@ -1,4 +1,4 @@
-= image_tag 'biography.jpg'
+= image_tag 'biography.jpg', resize_to: '712x'
 h3= db.title
 - db.text.split("\n\n").each do |paragraph|
   p= paragraph.gsub("\n", '<br>')
