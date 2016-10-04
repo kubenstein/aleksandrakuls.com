@@ -1,0 +1,4 @@
+.biography
+  = image_tag 'biography.jpg', resize_to: '712x'
+  h3= db.title
+  = db.text.bbcode_to_html_with_formatting
