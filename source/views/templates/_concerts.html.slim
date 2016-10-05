@@ -1,7 +1,9 @@
 - js_scope = db.scope == 'INCOMMING' ? 'new Date()' : 'new Date("1970-01-01")'
 
 .concerts
-  = image_tag 'concerts.jpg', resize_to: '712x'
+  .image-wrapper
+    = image_tag 'concerts.jpg', class: 'image', resize_to: '712x'
+
   h3= db.title
   = link_to db.link_text, eval(db.link), class: 'show_all_contacts'
   table
