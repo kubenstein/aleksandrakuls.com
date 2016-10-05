@@ -1,10 +1,10 @@
 .reviews
-= image_tag 'reviews.jpg', resize_to: '712x'
-h3= db.title
-- db.reviews.each do |review|
-  p.review
-    = "\"#{review.text}\""
-    - if review.link
-      = link_to "~ #{review.author}", review.link, class: 'author'
-    - else
-      a.author= review.author
+  = image_tag 'reviews.jpg', resize_to: '712x'
+  h3= db.title
+  - db.reviews.each do |review|
+    p.review
+      = "\"#{review.text}\""
+      - if review.link
+        = link_to "~ #{review.author}", review.link, class: 'author'
+      - else
+        a.author= review.author
