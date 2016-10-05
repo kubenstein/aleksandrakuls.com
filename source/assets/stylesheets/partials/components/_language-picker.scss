@@ -1,0 +1,20 @@
+section#language {
+  float: right;
+  margin: 13px 25px 0 0;
+}
+
+section#language li a {
+  display: block;
+  width: 48px;
+  height: 36px;
+  padding-bottom: 3px;
+  text-indent: -9999px;
+}
+
+section#language li.pl a {
+   background: image-url("layout/pl.png") no-repeat 0 0;
+}
+
+section#language li.en a {
+   background: image-url("layout/en.png") no-repeat 0 0;
+}

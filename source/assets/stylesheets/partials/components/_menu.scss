@@ -1,0 +1,29 @@
+section#menu {
+  width: 250px;
+}
+
+section#menu ul {
+  margin: 30px 0 0 10px;
+}
+
+section#menu ul li {
+  padding-bottom: 15px;
+}
+
+section#menu ul li a {
+  display: block;
+  padding-left: 55px;
+  font-size: 17pt;
+  text-decoration: none;
+  color: #7f7f7f;
+  letter-spacing: 3px;
+}
+
+section#menu ul li:hover a {
+  color: #fff;
+}
+
+section#menu ul li.active a {
+  color: #fff;
+  background: image-url("layout/menu_active.png") no-repeat 25px 50%;
+}

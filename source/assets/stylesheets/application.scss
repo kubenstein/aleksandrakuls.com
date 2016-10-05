@@ -1,4 +1,11 @@
-@import 'partials/lightbox';
 @import 'partials/reset';
+@import 'partials/utils';
 @import 'partials/layout';
-@import 'partials/styles';
+@import 'partials/components/page-styles';
+@import 'partials/components/footer';
+@import 'partials/components/header';
+@import 'partials/components/language-picker';
+@import 'partials/components/menu';
+@import 'partials/components/news';
+@import 'partials/components/footer';
+@import 'partials/components/lightbox';
