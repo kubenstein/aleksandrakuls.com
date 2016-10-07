@@ -26,10 +26,10 @@ module RoutesUtils
   #
   def self.paths
     file_paths.each_with_object({}) do |path, hsh|
-      path_helper_name = "#{path_to_name(path)}_path"
+      path_name = "#{path_to_name(path)}_path"
       route = '/' + path.remove('index', '.html')
       route += '/' if route[-1] != '/'
-      hsh[path_helper_name] = route
+      hsh[path_name] = route
     end
   end
 
