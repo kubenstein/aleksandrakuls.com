@@ -1,12 +1,12 @@
 #
-# PartialFrontmatter is a class that provides frontmatter vars from all partials
+# InlineDataDb is a class that provides frontmatter vars from all partials
 # inspired by: https://gist.github.com/vernonk/4969096
 
 require 'yaml'
 
-class PartialFrontmatter
-  
-  def collect_data
+class InlineDataDb
+
+  def data
     sorted_path_to_partials.each_with_object({}) do |path, hsh|
       vars = parse_frontmatter_vars(path)
       hsh.deep_merge!(vars) if vars

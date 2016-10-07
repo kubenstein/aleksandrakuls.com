@@ -5,8 +5,3 @@ RoutesUtils::paths.each do |path_helper_name, route|
     lang == _default_lang ? route : "/#{lang}#{route}"
   end
 end
-
-def localized_current_page_path(lang=current_lang, _default_lang=default_lang)
-  route = current_page.url.remove("#{current_lang}/")
-  lang == _default_lang ? route : "/#{lang}#{route}"
-end
