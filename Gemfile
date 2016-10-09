@@ -1,12 +1,11 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
-ruby '2.0.0'
+ruby '2.3.1'
 
 
 gem 'middleman'
 gem 'middleman-minify-html'
 gem 'slim'
-gem 'recursive-open-struct'
 gem 'require_all'
 gem 'middleman-simple-thumbnailer'
 gem 'bb-ruby'
