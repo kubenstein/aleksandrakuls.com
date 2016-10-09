@@ -5,6 +5,9 @@
 require 'yaml'
 
 class InlineDataDb
+  def initialize(yml_file_paths:)
+    @yml_file_paths = yml_file_paths
+  end
 
   def data
     sorted_path_to_partials.each_with_object({}) do |path, hsh|
@@ -17,11 +20,13 @@ class InlineDataDb
   private
 
   def path_to_partials
-    Dir['source/{views,pages}/**/_*']
+    Dir[@yml_file_paths]
   end
 
   def sorted_path_to_partials
-    path_to_partials.sort_by { |path| path.split('/').count }.reverse
+    path_to_partials
+      .sort_by { |path| path.split('/').count }
+      .reverse
   end
 
   def parse_frontmatter_vars(path)
