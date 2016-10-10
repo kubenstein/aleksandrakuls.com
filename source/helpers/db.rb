@@ -12,3 +12,7 @@ end
 def news
   NewsRepository.new.all(language: current_lang)
 end
+
+def concerts
+  ConcertsRepository.new.all(language: current_lang)
+end

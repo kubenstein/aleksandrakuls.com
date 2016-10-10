@@ -10,7 +10,7 @@
     tbody#js-concerts
 
 javascript:
-  var concerts = #{db.concerts.map(&:to_h).to_json};
+  var concerts = #{concerts.map(&:to_h).to_json};
   var classForPastConcert = function(concert) { return (new Date(concert.date) < new Date()) ? 'past' : 'incomming' };
   var condition = function(concert) { return (new Date(concert.date) > #{js_scope}) };
   var template = function(concert) { return "<tr class='"+ classForPastConcert(concert) +"'><td class='date'>"+ concert.date +"</td><td>"+ concert.text +"</td></tr>" };
