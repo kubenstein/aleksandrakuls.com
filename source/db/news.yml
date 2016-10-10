@@ -1,0 +1,27 @@
+pl:
+  -
+    image: news/bach_penderecki_prokofiev_ysaye_solo.jpg
+    text: |
+      Płyta Aleksandry Kuls z utworami na skrzypce solo została wydana! Zachęcamy do nabycia CD! W programie utwory Bacha, Pendereckiego, Prokofiewa i Ysaÿe'a.
+
+  -
+    image: news/bethoven_brahms_massenet.jpg
+    text: |
+      W 2015 roku ukazała się debiutancka płyta Aleksandry Kuls z Justyną Danczowską dla firmy DUX!
+
+      W programie płyty:
+      Sonata 'Kreutzerowska' Beethovena, III Sonata Brahmsa oraz Medytacja Masseneta.
+
+en:
+  -
+    image: news/bach_penderecki_prokofiev_ysaye_solo.jpg
+    text: |
+      New CD release: Bach, Penderecki, Prokofiev, Ysaÿe solo pieces!
+
+  -
+    image: news/bethoven_brahms_massenet.jpg
+    text: |
+      In 2015 the debut CD of Aleksandra Kuls with Justyna Danczowska was released!
+
+      The programme:
+      Beethoven - "Kreutzer" Sonata, Brahms - 3rd Sonata, Massenet - Meditation

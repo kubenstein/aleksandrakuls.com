@@ -8,3 +8,7 @@ def db
     JSON.parse(localized_data.to_json, object_class: OpenStruct)
   end
 end
+
+def news
+  NewsRepository.new.all(language: current_lang)
+end
