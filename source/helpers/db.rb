@@ -24,3 +24,7 @@ end
 def music_list
   MusicRepository.new.all(language: current_lang)
 end
+
+def reviews
+  ReviewsRepository.new.all(language: current_lang)
+end

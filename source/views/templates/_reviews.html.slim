@@ -4,7 +4,7 @@
     span.additional-text fot. Piotr Iwaszko
 
   h3= db.title
-  - db.reviews.each do |review|
+  - reviews.each do |review|
     p.review
       = "\"#{review.text}\""
       - if review.link
