@@ -1,5 +1,5 @@
 ul.gallery
-  - db.photos.each do |photo|
+  - gallery_photos.each do |photo|
     - path = "gallery/#{photo.file_name}"
     li
       = link_to image_path(path), rel: 'lightbox', title: photo.title do
