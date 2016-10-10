@@ -10,21 +10,21 @@ def db
 end
 
 def news
-  NewsRepository.new.all(language: current_lang)
+  Ak::NewsRepository.new.all(language: current_lang)
 end
 
 def concerts
-  ConcertsRepository.new.all(language: current_lang)
+  Ak::ConcertsRepository.new.all(language: current_lang)
 end
 
 def gallery_photos
-  PhotosRepository.new.all_for_gallery(language: current_lang)
+  Ak::PhotosRepository.new.all_for_gallery(language: current_lang)
 end
 
 def music_list
-  MusicRepository.new.all(language: current_lang)
+  Ak::MusicRepository.new.all(language: current_lang)
 end
 
 def reviews
-  ReviewsRepository.new.all(language: current_lang)
+  Ak::ReviewsRepository.new.all(language: current_lang)
 end
