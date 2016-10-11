@@ -3,7 +3,7 @@ module Ak
     def all(language:)
       data = YmlLoader.new(resource: :music)
                       .load_data(language: language)
-      DataCaster.new.cast_to_entity(data: data, entity: OpenStruct)
+      DataCaster.new.cast_to_entity(data: data, entity: Music)
     end
   end
 end
