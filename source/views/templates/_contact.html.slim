@@ -3,4 +3,4 @@
     = image_tag 'contact.jpg', class: 'image', resize_to: '712x'
 
   h3= db.title
-  = db.text.bbcode_to_html_with_formatting
+  = page_data(:contact).text.bbcode_to_html_with_formatting

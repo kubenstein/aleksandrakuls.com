@@ -28,3 +28,8 @@ end
 def reviews
   Ak::ReviewsRepository.new.all(language: current_lang)
 end
+
+def page_data(page)
+  repo = Ak::PagesRepository.new
+  repo.public_send(page, language: current_lang)
+end
