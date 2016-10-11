@@ -1,2 +1,4 @@
-class News < OpenStruct
+module Ak
+  class News < OpenStruct
+  end
 end

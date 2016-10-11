@@ -1,2 +1,4 @@
-class Review < OpenStruct
+module Ak
+  class Review < OpenStruct
+  end
 end

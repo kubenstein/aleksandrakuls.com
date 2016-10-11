@@ -1,2 +1,4 @@
-class Concert < OpenStruct
+module Ak
+  class Concert < OpenStruct
+  end
 end
