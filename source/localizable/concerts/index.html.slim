@@ -1,0 +1,25 @@
+- active_menu_item!(:concerts)
+
+- js_scope = 'new Date("1970-01-01")'
+
+.concerts
+  .image-wrapper
+    = image_tag 'concerts.jpg', class: 'image', resize_to: '712x'
+
+  h3= t('concerts')
+  = link_to t('show_incomming_concerts'), localized_path('/concerts/incomming/'), class: 'show_all_contacts'
+  table
+    tbody#js-concerts
+
+javascript:
+  var concerts = #{concerts.map(&:to_h).to_json};
+  var classForPastConcert = function(concert) { return (new Date(concert.date) < new Date()) ? 'past' : 'incomming' };
+  var condition = function(concert) { return (new Date(concert.date) > #{js_scope}) };
+  var template = function(concert) { return "<tr class='"+ classForPastConcert(concert) +"'><td class='date'>"+ concert.date +"</td><td>"+ concert.text +"</td></tr>" };
+
+  $(document).ready(function() {
+    var table = $('#js-concerts');
+    $.each(jQuery.grep(concerts, condition), function(_, concert) {
+      table.append(template(concert));
+    });
+  })

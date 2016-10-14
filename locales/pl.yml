@@ -1,0 +1,10 @@
+pl:
+  biography: Biografia
+  concerts: Koncerty
+  reviews: Recenzje
+  gallery: Galeria
+  music: Muzyka
+  contact: Kontakt
+
+  show_incomming_concerts: pokaż tylko przyszłe koncerty
+  show_all_concerts: pokaż wszystkie

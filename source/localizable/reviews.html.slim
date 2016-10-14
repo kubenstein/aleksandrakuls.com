@@ -1,9 +1,11 @@
+- active_menu_item!(:reviews)
+
 .reviews
   .image-wrapper
     = image_tag 'reviews.jpg', class: 'image', resize_to: '712x'
     span.additional-text fot. Piotr Iwaszko
 
-  h3= db.title
+  h3= t('reviews')
   - reviews.each do |review|
     p.review
       = "\"#{review.text}\""

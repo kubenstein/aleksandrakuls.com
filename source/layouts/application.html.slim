@@ -25,7 +25,7 @@ body
           = partial 'partials/news'
 
       section#content role="content"
-         = partial current_page.data.template
+         = yield
          br.clear
     footer
       | copyright © Aleksandra Kuls 2012

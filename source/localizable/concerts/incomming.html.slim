@@ -1,11 +1,13 @@
-- js_scope = db.scope == 'INCOMMING' ? 'new Date()' : 'new Date("1970-01-01")'
+- active_menu_item!(:concerts)
+
+- js_scope = 'new Date()'
 
 .concerts
   .image-wrapper
     = image_tag 'concerts.jpg', class: 'image', resize_to: '712x'
 
-  h3= db.title
-  = link_to db.link_text, eval(db.link), class: 'show_all_contacts'
+  h3= t('concerts')
+  = link_to t('show_all_concerts'), localized_path('/concerts'), class: 'show_all_contacts'
   table
     tbody#js-concerts
 

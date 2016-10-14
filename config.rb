@@ -4,26 +4,17 @@ require_all 'lib/'
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
 set :images_dir, 'assets/images'
-set :layouts_dir, 'views/layouts'
-set :partials_dir, 'views/templates'
+set :partials_dir, 'localizable'
 set :layout, 'application'
-
-ignore 'views/*'
-ignore 'helpers/*'
-ignore 'pages/*'
 
 ## load helpers
 helpers do
   load_all 'source/helpers/'
 end
 
-
-## configure routes
-RoutesUtils::handle_custom_page_data_location!(self)
-
-
 ## extensions
 activate :middleman_simple_thumbnailer
+activate :i18n, langs: [:pl, :en]
 activate :directory_indexes
 
 configure :build do

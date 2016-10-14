@@ -1,7 +1,9 @@
+- active_menu_item!(:biography)
+
 .biography
   .image-wrapper
     = image_tag 'biography.jpg', class: 'image', resize_to: '712x'
     span.additional-text fot. Piotr Iwaszko
 
-  h3= db.title
+  h3 Aleksandra Kuls
   = page_data(:biography).text.bbcode_to_html_with_formatting
