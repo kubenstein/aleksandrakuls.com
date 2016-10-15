@@ -1,5 +1,5 @@
 - news.each do |news|
   .news
     - if news.image.present?
-      = image_tag news.image, class: 'image', resize_to: '230x'
+      = image_tag news.image, title: news.text, class: 'image', resize_to: '230x'
     p.content= news.text.gsub("\n", '<br>')

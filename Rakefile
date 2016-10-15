@@ -7,10 +7,3 @@ namespace :assets do
     puts `middleman build --clean --verbose`
   end
 end
-
-
-#
-# specs
-require 'rspec/core/rake_task'
-RSpec::Core::RakeTask.new(:spec)
-task default: :spec
