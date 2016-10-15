@@ -15,3 +15,5 @@ gem 'rake'
 gem 'rack-contrib'
 gem 'www-redirect'
 
+gem "rspec"
+gem "capybara"
