@@ -24,3 +24,10 @@ configure :build do
   activate :asset_hash, ignore: [/images\/[^(layout)]/]
   activate :relative_assets
 end
+
+#
+# Suppress Slim warning:
+# "Option :lang is not supported by Slim::Engine"
+#
+# https://github.com/middleman/middleman/issues/1077#issuecomment-29583949
+::Slim::Engine.set_default_options lang: I18n.locale, locals: {}
