@@ -1,10 +1,12 @@
 Bundler.require
 
 require 'capybara/rspec'
+require 'capybara/poltergeist'
 
 Capybara.app = Middleman::Application.server.inst do
   set :root, File.expand_path(File.join(File.dirname(__FILE__), '..'))
-  set :environment, :development
+  set :environment, :test
   set :show_exceptions, false
 end
 
+Capybara.javascript_driver = :poltergeist
