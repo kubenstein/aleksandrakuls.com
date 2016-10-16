@@ -1,5 +1,5 @@
 Bundler.require
-
+require_all 'spec/features/support/'
 require 'capybara/rspec'
 require 'capybara/poltergeist'
 

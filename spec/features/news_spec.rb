@@ -5,14 +5,15 @@ describe 'News', type: :feature do
     visit '/'
   end
 
-  it 'displays news correctly' do
+  it 'are being displayed correctly' do
     expect(page.body).to have_content /Płyta Aleksandry Kuls z utworami na skrzypce solo została wydana! /i
-    image = find('img[title~="Płyta Aleksandry Kuls z utworami na skrzypce solo"]')
-    expect(image).to be_present
+    expect(
+      find('img[title~="Płyta Aleksandry Kuls z utworami na skrzypce solo"]')
+    ).to be_present
   end
 
-  it 'displays news correctly in english' do
-    click_link 'English'
+  it 'are being displayed correctly in english' do
+    switch_langauge_to_english
     expect(page.body).to have_content /New CD release/i
   end
 end

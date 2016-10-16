@@ -10,13 +10,11 @@ describe 'Main Page', type: :feature do
   end
 
   it 'displays main page correctly in english' do
-    click_link 'English'
+    switch_langauge_to_english
     expect(page.body).to have_content /Aleksandra Kuls was born in 1991./i
   end
 
   it 'marks side menu item correctly' do
-    within find('#menu .active') do
-      expect(page.body).to have_content /Biografia/i
-    end
+    expect_active_menu_item_to_be('Biografia')
   end
 end

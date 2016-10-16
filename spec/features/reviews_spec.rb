@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'Reviews', type: :feature do
+describe 'Reviews page', type: :feature do
   before do
     visit '/reviews'
   end
@@ -10,15 +10,13 @@ describe 'Reviews', type: :feature do
     expect(page.body).to have_content /Hanna Milewska, Hi-Fi i Muzyka/i
   end
 
-  it 'displays main page correctly in english' do
-    click_link 'English'
+  it 'displays page correctly in english' do
+    switch_langauge_to_english
     expect(page.body).to have_content /Aleksandra Kuls has managed to reflect in Brahms/i
     expect(page.body).to have_content /Anna Woźniakowska "Dziennik Polski"/i
   end
 
   it 'marks side menu item correctly' do
-    within find('#menu .active') do
-      expect(page.body).to have_content /Recenzje/i
-    end
+    expect_active_menu_item_to_be('Recenzje')
   end
 end

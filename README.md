@@ -9,6 +9,9 @@ cac.pl
 * bundle
 * middleman -p 3000
 
+### Testy:
+* rspec
+
 ### Deployment (lokalnie):
 * middleman build
 
