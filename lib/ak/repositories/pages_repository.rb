@@ -1,5 +1,9 @@
 module Ak
   class PagesRepository
+    def initialize(adapter: YmlLoader.new)
+      @adapter = adapter
+    end
+
     def biography(language:)
       data_for_page(:biography, language: language)
     end
@@ -11,8 +15,7 @@ module Ak
     private
 
     def data_for_page(page, language:)
-      data = YmlLoader.new(resource: page)
-                      .load_data(language: language)
+      data = @adapter.load_data(page, language: language)
       DataCaster.new.cast_to_entity(data: data, entity: Page)
     end
   end

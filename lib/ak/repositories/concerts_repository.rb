@@ -1,8 +1,11 @@
 module Ak
   class ConcertsRepository
+    def initialize(adapter: YmlLoader.new)
+      @adapter = adapter
+    end
+
     def all(language:)
-      data = YmlLoader.new(resource: :concerts)
-                      .load_data(language: language)
+      data = @adapter.load_data(:concerts, language: language)
       DataCaster.new.cast_to_entity(data: data, entity: Concert)
     end
   end
