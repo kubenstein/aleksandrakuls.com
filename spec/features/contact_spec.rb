@@ -1,20 +1,34 @@
 require 'spec_helper'
 
 describe 'Contact page', type: :feature do
-  before do
+  let(:repo) { Ak::PagesRepository.new(adapter: DB_MEMORY_ADAPTER) }
+  before { repo.clear }
+
+  it 'marks side menu item correctly' do
     visit '/contact'
+    expect_active_menu_item_to_be('Kontakt')
   end
 
   it 'displays page correctly' do
-    expect(page.body).to have_content /Aleksandra Kuls jest reprezentowana przez Stowarzyszenie im. Ludwiga van Beethovena./i
+    add_contact_text(:pl, text: 'kontakt tekst')
+    visit '/contact'
+    expect(page.body).to have_content /kontakt tekst/i
   end
 
   it 'displays page correctly in english' do
+    add_contact_text(:en, text: 'contact text')
+    visit '/contact'
     switch_langauge_to_english
-    expect(page.body).to have_content /Aleksandra Kuls is represented the Ludwig van Beethoven Association./i
+    expect(page.body).to have_content /contact text/i
   end
 
-  it 'marks side menu item correctly' do
-    expect_active_menu_item_to_be('Kontakt')
+  private
+
+  def add_contact_text(language, text:)
+    page = Ak::Page.new(
+      text: text,
+      language: language
+    )
+    repo.add(:contact, page)
   end
 end
