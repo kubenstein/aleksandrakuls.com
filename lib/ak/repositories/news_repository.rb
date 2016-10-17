@@ -5,8 +5,16 @@ module Ak
     end
 
     def all(language:)
-      data = @adapter.load_data(:news, language: language)
-      DataCaster.new.cast_to_entity(data: data, entity: News)
+      raw_data = @adapter.load_data(:news, language: language)
+      raw_data.map { |data| News.new(data) }
+    end
+
+    def add(news)
+      @adapter.add_data(:news, data: news.to_h)
+    end
+
+    def clear
+      @adapter.clear(:news)
     end
   end
 end

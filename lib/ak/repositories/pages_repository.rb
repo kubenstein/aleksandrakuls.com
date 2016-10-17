@@ -15,8 +15,8 @@ module Ak
     private
 
     def data_for_page(page, language:)
-      data = @adapter.load_data(page, language: language)
-      DataCaster.new.cast_to_entity(data: data, entity: Page)
+      data = @adapter.load_data(page, language: language)[0]
+      DataCaster.new.cast_to_entity(data: data.to_h, entity: Page)
     end
   end
 end
