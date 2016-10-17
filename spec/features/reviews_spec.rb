@@ -1,22 +1,38 @@
 require 'spec_helper'
 
 describe 'Reviews page', type: :feature do
-  before do
+  let(:repo) { Ak::ReviewsRepository.new(adapter: DB_MEMORY_ADAPTER) }
+  before { repo.clear }
+
+  it 'marks side menu item correctly' do
     visit '/reviews'
+    expect_active_menu_item_to_be('Recenzje')
   end
 
   it 'displays page correctly' do
-    expect(page.body).to have_content /Aleksandra Kuls i Justyna Danczowska tworzą doskonale rozumiejący się duet/i
-    expect(page.body).to have_content /Hanna Milewska, Hi-Fi i Muzyka/i
+    add_review(:pl, text: 'review text', author: 'mr. R')
+    visit '/reviews'
+    expect(page.body).to have_content /review text/i
+    expect(page.body).to have_content /mr. R/i
   end
 
   it 'displays page correctly in english' do
+    add_review(:en, text: 'review text', author: 'mr. R')
+
+    visit '/reviews'
     switch_langauge_to_english
-    expect(page.body).to have_content /Aleksandra Kuls has managed to reflect in Brahms/i
-    expect(page.body).to have_content /Anna Woźniakowska "Dziennik Polski"/i
+    expect(page.body).to have_content /review text/i
+    expect(page.body).to have_content /mr. R/i
   end
 
-  it 'marks side menu item correctly' do
-    expect_active_menu_item_to_be('Recenzje')
+  private
+
+  def add_review(language, text:, author:)
+    review = Ak::Review.new(
+      text: text,
+      author: author,
+      language: language
+    )
+    repo.add(review)
   end
 end
