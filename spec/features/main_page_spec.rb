@@ -1,20 +1,34 @@
 require 'spec_helper'
 
-describe 'Main Page', type: :feature do
-  before do
-    visit '/'
-  end
-
-  it 'displays main page correctly' do
-    expect(page.body).to have_content /Aleksandra Kuls urodziła się w 1991 roku./i
-  end
-
-  it 'displays main page correctly in english' do
-    switch_langauge_to_english
-    expect(page.body).to have_content /Aleksandra Kuls was born in 1991./i
-  end
+describe 'Main page', type: :feature do
+  let(:repo) { Ak::PagesRepository.new(adapter: DB_MEMORY_ADAPTER) }
+  before { repo.clear }
 
   it 'marks side menu item correctly' do
+    visit '/'
     expect_active_menu_item_to_be('Biografia')
+  end
+
+  it 'displays page correctly' do
+    add_biography_text(:pl, text: 'biografia tekst')
+    visit '/'
+    expect(page.body).to have_content /biografia tekst/i
+  end
+
+  it 'displays page correctly in english' do
+    add_biography_text(:en, text: 'biography text')
+    visit '/'
+    switch_langauge_to_english
+    expect(page.body).to have_content /biography text/i
+  end
+
+  private
+
+  def add_biography_text(language, text:)
+    page = Ak::Page.new(
+      text: text,
+      language: language
+    )
+    repo.add(:biography, page)
   end
 end
