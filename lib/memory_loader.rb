@@ -9,7 +9,7 @@ class MemoryLoader
   end
 
   def add_data(resources_name, data:)
-    (db[resources_name] = []) << data
+    (db[resources_name] ||= []) << data
   end
 
   def db
