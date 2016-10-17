@@ -1,6 +1,6 @@
 module Ak
   class ReviewsRepository
-    def initialize(adapter: YmlLoader.new)
+    def initialize(adapter: YmlAdapter.new)
       @adapter = adapter
     end
 
