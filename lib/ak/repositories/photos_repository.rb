@@ -1,6 +1,6 @@
 module Ak
   class PhotosRepository
-    def initialize(adapter: YmlAdapter.new)
+    def initialize(adapter: YmlAdapter.new(ymls_dir_path: 'db/'))
       @adapter = adapter
     end
 

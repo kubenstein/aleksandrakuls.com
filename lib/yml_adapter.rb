@@ -1,6 +1,10 @@
 class YmlAdapter
+  def initialize(ymls_dir_path:)
+    @ymls_dir_path = ymls_dir_path
+  end
+
   def load_data(resources_name, language:)
-    data = YAML::load_file("db/#{resources_name}.yml")
+    data = YAML::load_file("#{@ymls_dir_path}#{resources_name}.yml")
     data[language.to_s]
   end
 
