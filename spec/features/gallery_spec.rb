@@ -23,6 +23,6 @@ describe 'Gallery page', type: :feature do
       file_name: file_name,
       language: language
     )
-    repo.add_to_gallery(photo)
+    repo.add(photo)
   end
 end

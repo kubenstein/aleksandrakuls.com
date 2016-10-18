@@ -23,7 +23,7 @@ module Ak
     end
 
     def gallery_photos
-      Ak::PhotosRepository.new(options).all_for_gallery(language: @current_lang)
+      Ak::PhotosRepository.new(options).all(language: @current_lang)
     end
 
     def music_list
