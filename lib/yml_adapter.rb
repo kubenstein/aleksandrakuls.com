@@ -1,3 +1,5 @@
+require 'yaml'
+
 class YmlAdapter
   include Adapter::Adapterable
 
