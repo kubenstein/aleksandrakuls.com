@@ -1,4 +1,6 @@
 class YmlAdapter
+  include Adapter::Adapterable
+
   def initialize(ymls_dir_path:)
     @ymls_dir_path = ymls_dir_path
   end

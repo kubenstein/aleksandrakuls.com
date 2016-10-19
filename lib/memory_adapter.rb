@@ -1,4 +1,6 @@
 class MemoryAdapter
+  include Adapter::Adapterable
+
   def load_data(resources_name, language:)
     (db[resources_name] ||= [])
       .select { |item| item[:language] == language }

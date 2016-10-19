@@ -1,10 +1,6 @@
 module Ak
   class CommonRepository
-    def self.default_adapter
-      YmlAdapter.new(ymls_dir_path: 'db/')
-    end
-
-    def initialize(adapter: default_adapter, entity:, resource_name:)
+    def initialize(adapter: Adapter::default, entity:, resource_name:)
       @adapter = adapter
       @entity = entity
       @resource_name = resource_name

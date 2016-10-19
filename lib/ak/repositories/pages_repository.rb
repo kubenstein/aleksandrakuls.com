@@ -1,6 +1,6 @@
 module Ak
   class PagesRepository
-    def initialize(adapter: YmlAdapter.new(ymls_dir_path: 'db/'))
+    def initialize(adapter: Adapter::default)
       @adapter = adapter
     end
 
