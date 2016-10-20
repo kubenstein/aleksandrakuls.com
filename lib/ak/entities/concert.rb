@@ -1,5 +1,7 @@
 module Ak
-  class Concert < Entity
+  class Concert
+    include ToHashable
+
     # date format: YYYY-MM-DD
     attr_accessor :text, :date, :language
 

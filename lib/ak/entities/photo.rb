@@ -1,5 +1,7 @@
 module Ak
-  class Photo < Entity
+  class Photo
+    include ToHashable
+
     attr_accessor :title, :file_name, :language
 
     def initialize(title:, file_name:, language:)

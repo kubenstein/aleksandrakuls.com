@@ -1,5 +1,7 @@
 module Ak
-  class News < Entity
+  class News
+    include ToHashable
+
     attr_accessor :text, :image, :language
 
     def initialize(text:, image:, language:)

@@ -1,5 +1,7 @@
 module Ak
-  class Review < Entity
+  class Review
+    include ToHashable
+
     attr_accessor :text, :author, :link, :language
 
     def initialize(text:, author:, link: '', language:)
