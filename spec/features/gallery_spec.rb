@@ -20,6 +20,7 @@ describe 'Gallery page', type: :feature do
 
   def add_photo(language, file_name:)
     photo = Ak::Photo.new(
+      title: 'Picture title',
       file_name: file_name,
       language: language
     )

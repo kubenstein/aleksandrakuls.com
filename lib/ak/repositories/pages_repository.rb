@@ -23,9 +23,13 @@ module Ak
 
     private
 
-    def data_for_page(page, language:)
-      data = @adapter.load_data(page, language: language)[0]
-      Page.new(data)
+    def data_for_page(page_id, language:)
+      data = @adapter.load_data(page_id, language: language)[0]
+      if data.nil?
+        Page.new(language: language)
+      else
+        Page.new(data)
+      end
     end
   end
 end

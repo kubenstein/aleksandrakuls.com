@@ -8,8 +8,9 @@ describe 'YmlAdapter' do
   it 'loads data properly' do
     expect(data.count).to eq 2
     expect(data[0]).to eq({
-      'text' => 'Article Text',
-      'title' => 'Article Title'
+      text: 'Article Text',
+      title: 'Article Title',
+      language: :en
     })
   end
 end

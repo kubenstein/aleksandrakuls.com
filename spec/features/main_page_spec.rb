@@ -22,6 +22,12 @@ describe 'Main page', type: :feature do
     expect(page.body).to have_content /biography text/i
   end
 
+  it 'displays page correctly when there is no article' do
+    add_biography_text(:en, text: 'in english')
+    visit '/'
+    expect(page.body).not_to have_content /in english/i
+  end
+
   private
 
   def add_biography_text(language, text:)
