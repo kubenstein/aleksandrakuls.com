@@ -1,5 +1,5 @@
 class MemoryAdapter
-  include Adapter::Adapterable
+  include Adapters::Adapterable
 
   def load_data(resources_name, language:)
     (db[resources_name] ||= [])

@@ -1,7 +1,7 @@
 require 'yaml'
 
 class YmlAdapter
-  include Adapter::Adapterable
+  include Adapters::Adapterable
 
   def initialize(ymls_dir_path:)
     @ymls_dir_path = ymls_dir_path

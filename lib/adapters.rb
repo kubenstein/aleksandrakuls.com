@@ -1,4 +1,4 @@
-module Adapter
+module Adapters
   def self.default
     YmlAdapter.new(ymls_dir_path: 'db/')
   end

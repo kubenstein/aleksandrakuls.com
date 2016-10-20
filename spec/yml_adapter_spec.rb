@@ -1,5 +1,5 @@
-require './lib/adapter'
-require './lib/yml_adapter'
+require './lib/adapters'
+require './lib/adapters/yml_adapter'
 
 describe 'YmlAdapter' do
   let(:adapter) { YmlAdapter.new(ymls_dir_path: 'spec/fixtures/') }
