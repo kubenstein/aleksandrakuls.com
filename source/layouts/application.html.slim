@@ -10,21 +10,21 @@ html
     /![if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]
   = partial 'partials/ga'
 body
-  #wrapper
+  .wrapper
     header role="banner"
-      a href="/"
+      a.logo href="/"
         h1 Aleksandra Kuls
-    section#language role="language"
+    section.language role="language"
       = partial 'partials/languages'
-    #inner
-      #side-content
-        section#menu role="navigation"
+    .inner
+      .side-content
+        section.menu role="navigation"
           = partial 'partials/main_menu'
 
-        section#news
+        section.news
           = partial 'partials/news'
 
-      section#content role="content"
+      section.content role="content"
          = yield
          br.clear
     footer

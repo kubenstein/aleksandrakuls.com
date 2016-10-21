@@ -1,60 +1,9 @@
-.image-wrapper {
-  position: relative;
-
-  .image {
-    display: block;
+.music {
+  .item {
+    padding-top: 20px;
   }
 
-  .additional-text {
-    position: absolute;
-    bottom: 1px;
-    right: 2px;
-    color: #fff;
-    font-size: 6pt;
-  }
-}
-
-
-section#content {
-  width: 712px;
-  margin-left: 250px;
-  color: #777;
-  font-size: 10pt;
-  font-family: Verdana, Tahoma;
-  background-color: #2d2d2d;
-
-  h2.splash {
-    text-align: justify;
-    font-weight: normal;
-    margin: 20px;
-    padding: 5px;
-    border: 1px solid #777;
-  }
-
-  h3 {
-    width: 592px;
-    font-weight: normal;
-    font-size: 20pt;
-    letter-spacing: 10px;
-    color: #C0AC8C;
-    margin: 10px 0 20px 60px;
-  }
-
-  p {
-    padding: 0 60px 20px 60px;
-    text-align: justify;
-    cite {
-      font-style: italic;
-    }
-  }
-
-  table {
-    padding: 0 0 10px 60px;
-  }
-}
-
-ul.music {
-  div.yt {
+  .video {
     background-color: #1A1A1A;
     margin: 0 auto;
     padding: 11px 11px 8px 11px;
@@ -62,11 +11,7 @@ ul.music {
     width: 640px;
   }
 
-  li {
-    padding-top: 20px;
-  }
-
-  h4 {
+  .title {
     font-weight: normal;
     font-size: 18pt;
     color: #C0AC8C;
@@ -75,22 +20,25 @@ ul.music {
 }
 
 .concerts {
-  table {
+  .table {
     width: 660px;
-    td.date {
+    padding: 0 0 10px 60px;
+
+    .item .date {
       width: 114px;
       vertical-align: top;
     }
 
-    .past td {
+    .item.past td {
       border-top: 1px solid #C0AC8C;
     }
 
-    .past ~ .past td {
+    .item.past ~ .past td {
       border: none;
     }
   }
-  a.show_all_contacts {
+
+  .additional-options {
     color: #C0AC8C;
     text-decoration: none;
     margin: -19px 0 20px 60px;
@@ -98,16 +46,19 @@ ul.music {
   }
 }
 
-ul.gallery {
-  padding-top: 36px;
-  li {
+.gallery {
+  .list {
+    padding-top: 36px;
+  }
+
+  .item {
     float: left;
     margin-left: 73px;
     line-height: 200px;
     height: 200px;
     padding-bottom: 40px;
   }
-  a img {
+  .image {
     border: 0 none;
     width: 120px;
     padding: 10px;
@@ -116,21 +67,16 @@ ul.gallery {
   }
 }
 
-p.review {
-  font-style: italic;
-  padding-bottom: 40px;
-  a {
-    display: block;
-    text-align: right;
-    text-decoration: none;
-    color: #c0aC8C;
-  }
-}
+.reviews {
+  .item {
+    font-style: italic;
+    padding-bottom: 40px;
 
-.contact p {
-  padding: 10px 0 0 60px;
-  font-size: 8pt;
-  a {
-    color: #c0aC8C;
+    .author {
+      display: block;
+      text-align: right;
+      text-decoration: none;
+      color: #c0aC8C;
+    }
   }
 }

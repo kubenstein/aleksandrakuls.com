@@ -1,5 +1,5 @@
 ul
-  li.pl
-    = link_to 'Polski', localized_path(current_page.url, :pl)
-  li.en
-    = link_to 'English', localized_path(current_page.url, :en)
+  li.item.pl
+    = link_to 'Polski', localized_path(current_page.url, :pl), class: 'link'
+  li.item.en
+    = link_to 'English', localized_path(current_page.url, :en), class: 'link'

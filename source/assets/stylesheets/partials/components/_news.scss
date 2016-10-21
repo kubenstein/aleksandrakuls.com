@@ -1,18 +1,18 @@
-section#news {
+section.news {
   clear: both;
   color: #666;
   width: 230px;
   margin-left: 10px;
   margin-top: 121px;
-}
 
-section#news .news .image {
-  display: block;
-  margin-bottom: 5px;
-}
+  .image {
+    display: block;
+    margin-bottom: 5px;
+  }
 
-section#news .news .content {
-  text-align: justify;
-  font-size: 10pt;
-  margin-bottom: 20px;
+  .content {
+    text-align: justify;
+    font-size: 10pt;
+    margin-bottom: 20px;
+  }
 }

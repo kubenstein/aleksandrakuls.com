@@ -5,9 +5,9 @@
     = image_tag 'reviews.jpg', class: 'image', resize_to: '712x'
     span.additional-text fot. Piotr Iwaszko
 
-  h3= t('reviews')
+  h3.page-title= t('reviews')
   - reviews.each do |review|
-    p.review
+    p.item
       = "\"#{review.text}\""
       - if review.link
         = link_to "~ #{review.author}", review.link, class: 'author'

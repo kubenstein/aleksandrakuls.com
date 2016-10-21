@@ -1,8 +1,9 @@
 - active_menu_item!(:gallery)
 
-ul.gallery
-  - gallery_photos.each do |photo|
-    - path = "gallery/#{photo.file_name}"
-    li
-      = link_to image_path(path), rel: 'lightbox', title: photo.title do
-        = image_tag path, resize_to: '140x'
+.gallery
+  ul.list
+    - gallery_photos.each do |photo|
+      - path = "gallery/#{photo.file_name}"
+      li.item
+        = link_to image_path(path), rel: 'lightbox', title: photo.title do
+          = image_tag path, class: 'image', resize_to: '140x'

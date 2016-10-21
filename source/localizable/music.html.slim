@@ -1,8 +1,9 @@
 - active_menu_item!(:music)
 
-ul.music
-  - music_list.each do |music|
-    li
-      .yt
-        iframe allowfullscreen="" frameborder="0" height="360" src="http://www.youtube.com/embed/#{music.yt_id}" width="640"
-      h4= music.title
+.music
+  ul.list
+    - music_list.each do |music|
+      li.item
+        .video
+          iframe allowfullscreen="" frameborder="0" height="360" src="http://www.youtube.com/embed/#{music.yt_id}" width="640"
+      h4.title= music.title

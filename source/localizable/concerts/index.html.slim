@@ -6,16 +6,16 @@
   .image-wrapper
     = image_tag 'concerts.jpg', class: 'image', resize_to: '712x'
 
-  h3= t('concerts')
-  = link_to t('show_incomming_concerts'), localized_path('/concerts/incomming/'), class: 'show_all_contacts'
-  table
+  h3.page-title= t('concerts')
+  = link_to t('show_incomming_concerts'), localized_path('/concerts/incomming/'), class: 'additional-options'
+  table.table
     tbody#js-concerts
 
 javascript:
   var concerts = #{concerts.map(&:to_h).to_json};
   var classForPastConcert = function(concert) { return (new Date(concert.date) < new Date()) ? 'past' : 'incomming' };
   var condition = function(concert) { return (new Date(concert.date) > #{js_scope}) };
-  var template = function(concert) { return "<tr class='"+ classForPastConcert(concert) +"'><td class='date'>"+ concert.date +"</td><td>"+ concert.text +"</td></tr>" };
+  var template = function(concert) { return "<tr class='item "+ classForPastConcert(concert) +"'><td class='date'>"+ concert.date +"</td><td class='description'>"+ concert.text +"</td></tr>" };
 
   $(document).ready(function() {
     var table = $('#js-concerts');
