@@ -26,7 +26,7 @@ module Ak
     def data_for_page(page_id, language:)
       data = @adapter.load_data(page_id, language: language)[0]
       if data.nil?
-        Page.new(language: language)
+        Page.new(language: language, text: '')
       else
         Page.new(data)
       end
