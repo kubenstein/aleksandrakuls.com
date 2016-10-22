@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe 'Contact page', type: :feature do
-  let(:repo) { Ak::PagesRepository.new(adapter: DB_MEMORY_ADAPTER) }
+  let(:repo) { Ak::PagesRepository.new }
   before { repo.clear }
 
   it 'marks side menu item correctly' do

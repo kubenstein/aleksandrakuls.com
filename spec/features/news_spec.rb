@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe 'News', type: :feature do
-  let(:repo) { Ak::NewsRepository.new(adapter: DB_MEMORY_ADAPTER) }
+  let(:repo) { Ak::NewsRepository.new }
   before { repo.clear }
 
   it 'are being displayed correctly' do

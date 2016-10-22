@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe 'Reviews page', type: :feature do
-  let(:repo) { Ak::ReviewsRepository.new(adapter: DB_MEMORY_ADAPTER) }
+  let(:repo) { Ak::ReviewsRepository.new }
   before { repo.clear }
 
   it 'marks side menu item correctly' do

@@ -1,6 +1,10 @@
 module Adapters
   def self.default
-    YmlAdapter.new(ymls_dir_path: 'db/')
+    @default_adapter ||= YmlAdapter.new(ymls_dir_path: 'db/')
+  end
+
+  def self.default=(adapter)
+    @default_adapter = adapter
   end
 
   module Adapterable

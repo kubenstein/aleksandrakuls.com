@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe 'Gallery page', type: :feature do
-  let(:repo) { Ak::PhotosRepository.new(adapter: DB_MEMORY_ADAPTER) }
+  let(:repo) { Ak::PhotosRepository.new }
   before { repo.clear }
 
   it 'marks side menu item correctly' do

@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe 'Music page', type: :feature do
-  let(:repo) { Ak::MusicRepository.new(adapter: DB_MEMORY_ADAPTER) }
+  let(:repo) { Ak::MusicRepository.new }
   before { repo.clear }
 
   it 'marks side menu item correctly' do

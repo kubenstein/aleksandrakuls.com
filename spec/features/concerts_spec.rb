@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe 'Concerts page', type: :feature, js: true do
-  let(:repo) { Ak::ConcertsRepository.new(adapter: DB_MEMORY_ADAPTER) }
+  let(:repo) { Ak::ConcertsRepository.new }
   before { repo.clear }
 
   it 'marks side menu item correctly' do
