@@ -2,11 +2,11 @@ source 'https://rubygems.org'
 
 ruby '2.3.1'
 
+gem 'require_all'
 gem 'middleman'
 gem 'middleman-minify-html'
-gem 'slim'
-gem 'require_all'
 gem 'middleman-simple-thumbnailer'
+gem 'slim'
 gem 'bb-ruby'
 
 group :test do
