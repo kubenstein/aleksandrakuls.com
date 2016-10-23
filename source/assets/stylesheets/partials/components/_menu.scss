@@ -23,7 +23,19 @@ section.menu {
   }
 
   .item.active .link {
+    position: relative;
     color: #fff;
-    background: image-url("layout/menu_active.png") no-repeat 25px 50%;
+
+    &:before {
+      position: absolute;
+      display: block;
+      content: " ";
+      background-color: #FF6425;
+      width: 18px;
+      height: 18px;
+      border-radius: 9px;
+      top: 5px;
+      left: 25px;
+    }
   }
 }
