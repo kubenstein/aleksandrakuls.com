@@ -7,7 +7,7 @@ describe 'News', type: :feature do
   it 'are being displayed correctly' do
     add_news(:pl, text: 'content')
     visit '/'
-    expect(page.body).to have_content /content/i
+    expect(page.body).to have_content 'content'
     expect(find('img[title~="content"]')).to be_present
   end
 
@@ -15,7 +15,7 @@ describe 'News', type: :feature do
     add_news(:en, text: 'english content')
     visit '/'
     switch_langauge_to_english
-    expect(page.body).to have_content /english content/i
+    expect(page.body).to have_content 'english content'
   end
 
   private

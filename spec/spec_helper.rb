@@ -9,5 +9,4 @@ end
 
 Capybara.javascript_driver = :poltergeist
 
-
 require_all 'spec/features/support/'

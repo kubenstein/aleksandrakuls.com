@@ -13,7 +13,7 @@ describe 'Concerts page', type: :feature, js: true do
     add_concert(:pl, date: '2116-11-20', text: 'concert')
 
     visit '/concerts'
-    expect(page.body).to have_content /2116-11-20concert/i
+    expect(page.body).to have_content '2116-11-20concert'
   end
 
   it 'displays page correctly in english' do
@@ -21,7 +21,7 @@ describe 'Concerts page', type: :feature, js: true do
 
     visit '/concerts'
     switch_langauge_to_english
-    expect(page.body).to have_content /2116-11-20concert/i
+    expect(page.body).to have_content '2116-11-20concert'
   end
 
   it 'displays incomming only page correctly' do
@@ -30,8 +30,8 @@ describe 'Concerts page', type: :feature, js: true do
 
     visit '/concerts'
     display_only_future_concerts
-    expect(page.body).to have_content /2116-11-20concert/i
-    expect(page.body).not_to have_content /1410-07-15concert in past/i
+    expect(page.body).to have_content '2116-11-20concert'
+    expect(page.body).not_to have_content '1410-07-15concert in past'
   end
 
   it 'displays incomming only page correctly in english' do
@@ -41,8 +41,8 @@ describe 'Concerts page', type: :feature, js: true do
     visit '/concerts'
     display_only_future_concerts
     switch_langauge_to_english
-    expect(page.body).to have_content /2116-11-20concert/i
-    expect(page.body).not_to have_content /1410-07-15concert in past/i
+    expect(page.body).to have_content '2116-11-20concert'
+    expect(page.body).not_to have_content '1410-07-15concert in past'
   end
 
   private

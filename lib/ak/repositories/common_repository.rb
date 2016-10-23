@@ -1,6 +1,6 @@
 module Ak
   class CommonRepository
-    def initialize(adapter: Adapters::default, entity:, resource_name:)
+    def initialize(adapter: Adapters.default, entity:, resource_name:)
       @adapter = adapter
       @entity = entity
       @resource_name = resource_name

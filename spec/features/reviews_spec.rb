@@ -12,8 +12,8 @@ describe 'Reviews page', type: :feature do
   it 'displays page correctly' do
     add_review(:pl, text: 'review text', author: 'mr. R')
     visit '/reviews'
-    expect(page.body).to have_content /review text/i
-    expect(page.body).to have_content /mr. R/i
+    expect(page.body).to have_content 'review text'
+    expect(page.body).to have_content 'mr. R'
   end
 
   it 'displays page correctly in english' do
@@ -21,8 +21,8 @@ describe 'Reviews page', type: :feature do
 
     visit '/reviews'
     switch_langauge_to_english
-    expect(page.body).to have_content /review text/i
-    expect(page.body).to have_content /mr. R/i
+    expect(page.body).to have_content 'review text'
+    expect(page.body).to have_content 'mr. R'
   end
 
   private

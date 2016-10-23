@@ -13,6 +13,7 @@ group :test do
   gem 'rspec'
   gem 'capybara'
   gem 'poltergeist'
+  gem 'rubocop'
 end
 
 group :production do
@@ -21,4 +22,3 @@ group :production do
   gem 'rack-contrib'
   gem 'www-redirect'
 end
-

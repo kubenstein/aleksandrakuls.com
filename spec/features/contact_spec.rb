@@ -12,14 +12,14 @@ describe 'Contact page', type: :feature do
   it 'displays page correctly' do
     add_contact_text(:pl, text: 'kontakt tekst')
     visit '/contact'
-    expect(page.body).to have_content /kontakt tekst/i
+    expect(page.body).to have_content 'kontakt tekst'
   end
 
   it 'displays page correctly in english' do
     add_contact_text(:en, text: 'contact text')
     visit '/contact'
     switch_langauge_to_english
-    expect(page.body).to have_content /contact text/i
+    expect(page.body).to have_content 'contact text'
   end
 
   private

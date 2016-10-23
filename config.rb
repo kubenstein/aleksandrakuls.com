@@ -21,7 +21,7 @@ configure :build do
   activate :minify_css
   activate :minify_javascript
   activate :minify_html
-  activate :asset_hash, ignore: [/images\/[^(layout)]/]
+  activate :asset_hash, ignore: %r{/images\/[^(layout)]/}
   activate :relative_assets
 end
 

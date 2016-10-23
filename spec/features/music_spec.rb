@@ -12,14 +12,14 @@ describe 'Music page', type: :feature do
   it 'displays page correctly' do
     add_music(:pl, title: 'title')
     visit '/music'
-    expect(page.body).to have_content /title/i
+    expect(page.body).to have_content 'title'
   end
 
   it 'displays page correctly in english' do
     add_music(:en, title: 'title')
     visit '/music'
     switch_langauge_to_english
-    expect(page.body).to have_content /title/i
+    expect(page.body).to have_content 'title'
   end
 
   private

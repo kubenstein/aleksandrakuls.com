@@ -12,20 +12,20 @@ describe 'Main page', type: :feature do
   it 'displays page correctly' do
     add_biography_text(:pl, text: 'biografia tekst')
     visit '/'
-    expect(page.body).to have_content /biografia tekst/i
+    expect(page.body).to have_content 'biografia tekst'
   end
 
   it 'displays page correctly in english' do
     add_biography_text(:en, text: 'biography text')
     visit '/'
     switch_langauge_to_english
-    expect(page.body).to have_content /biography text/i
+    expect(page.body).to have_content 'biography text'
   end
 
   it 'displays page correctly when there is no article' do
     add_biography_text(:en, text: 'in english')
     visit '/'
-    expect(page.body).not_to have_content /in english/i
+    expect(page.body).not_to have_content 'in english'
   end
 
   private
