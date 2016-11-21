@@ -18,7 +18,7 @@ describe 'Music page', type: :feature do
   it 'displays page correctly in english' do
     add_music(:en, title: 'title')
     visit '/music'
-    switch_langauge_to_english
+    switch_language_to_english
     expect(page.body).to have_content 'title'
   end
 

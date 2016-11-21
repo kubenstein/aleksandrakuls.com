@@ -10,21 +10,21 @@ describe 'Concerts page', type: :feature, js: true do
   end
 
   it 'displays page correctly' do
-    add_concert(:pl, date: '2116-11-20', text: 'concert')
+    add_concert(:pl, date: '2116-11-20', text: 'concert in polish')
 
     visit '/concerts'
-    expect(page.body).to have_content '2116-11-20concert'
+    expect(page.body).to have_content '2116-11-20concert in polish'
   end
 
   it 'displays page correctly in english' do
-    add_concert(:en, date: '2116-11-20', text: 'concert')
+    add_concert(:en, date: '2116-11-20', text: 'concert in english')
 
     visit '/concerts'
-    switch_langauge_to_english
-    expect(page.body).to have_content '2116-11-20concert'
+    switch_language_to_english
+    expect(page.body).to have_content '2116-11-20concert in english'
   end
 
-  it 'displays incomming only page correctly' do
+  it 'displays incoming only page correctly' do
     add_concert(:pl, date: '2116-11-20', text: 'concert')
     add_concert(:pl, date: '1116-11-20', text: 'concert in past')
 
@@ -34,13 +34,13 @@ describe 'Concerts page', type: :feature, js: true do
     expect(page.body).not_to have_content '1410-07-15concert in past'
   end
 
-  it 'displays incomming only page correctly in english' do
+  it 'displays incoming only page correctly in english' do
     add_concert(:en, date: '2116-11-20', text: 'concert')
     add_concert(:en, date: '1116-11-20', text: 'concert in past')
 
     visit '/concerts'
     display_only_future_concerts
-    switch_langauge_to_english
+    switch_language_to_english
     expect(page.body).to have_content '2116-11-20concert'
     expect(page.body).not_to have_content '1410-07-15concert in past'
   end

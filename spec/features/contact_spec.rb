@@ -18,7 +18,7 @@ describe 'Contact page', type: :feature do
   it 'displays page correctly in english' do
     add_contact_text(:en, text: 'contact text')
     visit '/contact'
-    switch_langauge_to_english
+    switch_language_to_english
     expect(page.body).to have_content 'contact text'
   end
 

@@ -8,13 +8,14 @@ describe 'News', type: :feature do
     add_news(:pl, text: 'content')
     visit '/'
     expect(page.body).to have_content 'content'
-    expect(find('img[title~="content"]')).to be_present
+    image = find('img[title~="content"]')
+    expect(image).to be_present
   end
 
   it 'are being displayed correctly in english' do
     add_news(:en, text: 'english content')
     visit '/'
-    switch_langauge_to_english
+    switch_language_to_english
     expect(page.body).to have_content 'english content'
   end
 

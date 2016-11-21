@@ -18,7 +18,7 @@ describe 'Main page', type: :feature do
   it 'displays page correctly in english' do
     add_biography_text(:en, text: 'biography text')
     visit '/'
-    switch_langauge_to_english
+    switch_language_to_english
     expect(page.body).to have_content 'biography text'
   end
 
