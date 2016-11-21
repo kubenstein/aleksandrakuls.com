@@ -1,9 +1,9 @@
 class MemoryAdapter
   include Adapters::Adapterable
 
-  def load_data(resources_name, language:)
+  def load_data(resources_name, conditions:)
     (db[resources_name] ||= [])
-      .select { |item| item[:language] == language }
+      .select { |item| item_meets_conditions?(item, conditions) }
   end
 
   def clear(resources_name)
@@ -16,5 +16,14 @@ class MemoryAdapter
 
   def db
     @db ||= {}
+  end
+
+  private
+
+  def item_meets_conditions?(item, conditions)
+    conditions.keys.each do |condition|
+      return false unless item[condition] == conditions[condition]
+    end
+    true
   end
 end

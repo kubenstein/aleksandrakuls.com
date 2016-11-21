@@ -7,7 +7,8 @@ class YmlAdapter
     @ymls_dir_path = ymls_dir_path
   end
 
-  def load_data(resources_name, language:)
+  def load_data(resources_name, conditions:)
+    language = conditions[:language]
     collection = YAML.load_file("#{@ymls_dir_path}#{resources_name}.yml")
     collection[language.to_s].map do |item|
       symbolize_keys(

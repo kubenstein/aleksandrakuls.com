@@ -7,7 +7,8 @@ module Ak
     end
 
     def all(language:)
-      raw_data = @adapter.load_data(@resource_name, language: language)
+      raw_data = @adapter.load_data(@resource_name,
+                                    conditions: { language: language })
       raw_data.map { |data| @entity.new(data) }
     end
 

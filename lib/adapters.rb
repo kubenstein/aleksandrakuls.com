@@ -8,7 +8,7 @@ module Adapters
   end
 
   module Adapterable
-    def load_data(resources_name, language:)
+    def load_data(resources_name, conditions:)
     end
 
     def clear(resources_name)

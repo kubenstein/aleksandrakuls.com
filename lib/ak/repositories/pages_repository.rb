@@ -5,11 +5,11 @@ module Ak
     end
 
     def biography(language:)
-      data_for_page(:biography, language: language)
+      data_for_page(:biography, conditions: { language: language })
     end
 
     def contact(language:)
-      data_for_page(:contact, language: language)
+      data_for_page(:contact, conditions: { language: language })
     end
 
     def add(page_id, page)
@@ -23,10 +23,10 @@ module Ak
 
     private
 
-    def data_for_page(page_id, language:)
-      data = @adapter.load_data(page_id, language: language)[0]
+    def data_for_page(page_id, conditions:)
+      data = @adapter.load_data(page_id, conditions: conditions)[0]
       if data.nil?
-        Page.new(language: language, text: '')
+        Page.new(language: conditions[:language], text: '')
       else
         Page.new(data)
       end
