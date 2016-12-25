@@ -1,10 +1,18 @@
 module Adapters
-  def self.default
-    @default_adapter ||= YmlAdapter.new(ymls_dir_path: 'db/')
+  def self.local_data_adapter
+    @lda ||= YmlAdapter.new(ymls_dir_path: 'db/')
   end
 
-  def self.default=(adapter)
-    @default_adapter = adapter
+  def self.remote_data_adapter
+    @rda ||= MongoDbAdapter.new(mongodb_uri: ENV.fetch('MONGODB_URI'))
+  end
+
+  def self.local_data_adapter=(adapter)
+    @lda = adapter
+  end
+
+  def self.remote_data_adapter=(adapter)
+    @rda = adapter
   end
 
   module Adapterable

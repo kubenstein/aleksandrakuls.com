@@ -8,6 +8,7 @@ gem 'middleman-minify-html'
 gem 'middleman-simple-thumbnailer'
 gem 'slim'
 gem 'bb-ruby'
+gem 'mongo'
 
 group :test do
   gem 'rspec'

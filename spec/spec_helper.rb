@@ -3,6 +3,7 @@ require 'capybara/poltergeist'
 require 'capybara/rspec'
 
 Capybara.app = Middleman::Application.server.inst do
+  ENV['MONGODB_URI'] = 'dummy'
   set :root, File.expand_path(File.join(File.dirname(__FILE__), '..'))
   set :show_exceptions, false
 end

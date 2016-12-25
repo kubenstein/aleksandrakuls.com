@@ -1,6 +1,6 @@
 module Ak
   class PagesRepository
-    def initialize(adapter: Adapters.default)
+    def initialize(adapter: Adapters.local_data_adapter)
       @adapter = adapter
     end
 

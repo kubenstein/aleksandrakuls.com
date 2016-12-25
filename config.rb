@@ -17,6 +17,13 @@ activate :middleman_simple_thumbnailer
 activate :i18n, langs: [:pl, :en]
 activate :directory_indexes
 
+configure :development do
+  unless ENV['MONGODB_URI']
+    Adapters.remote_data_adapter = Adapters.local_data_adapter
+  end
+end
+
+
 configure :build do
   activate :minify_css
   activate :minify_javascript
