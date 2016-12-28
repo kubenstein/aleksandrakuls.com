@@ -2,7 +2,6 @@ module Ak
   class Concert
     include ToHashable
 
-    # date format: YYYY-MM-DD
     attr_accessor :text, :date, :language
 
     def initialize(params)

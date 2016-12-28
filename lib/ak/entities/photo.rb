@@ -4,10 +4,10 @@ module Ak
 
     attr_accessor :title, :file_name, :language
 
-    def initialize(title:, file_name:, language:)
-      @title = title
-      @file_name = file_name
-      @language = language
+    def initialize(params)
+      @title = params[:title]
+      @file_name = params[:file_name]
+      @language = params[:language]
     end
   end
 end

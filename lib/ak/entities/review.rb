@@ -4,11 +4,11 @@ module Ak
 
     attr_accessor :text, :author, :link, :language
 
-    def initialize(text:, author:, link: '', language:)
-      @text = text
-      @author = author
-      @link = link
-      @language = language
+    def initialize(params)
+      @text = params[:text]
+      @author = params[:author]
+      @link = params[:link] || ''
+      @language = params[:language]
     end
   end
 end

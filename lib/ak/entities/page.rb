@@ -4,9 +4,9 @@ module Ak
 
     attr_accessor :text, :language
 
-    def initialize(text:, language:)
-      @text = text
-      @language = language
+    def initialize(params)
+      @text = params[:text]
+      @language = params[:language]
     end
   end
 end

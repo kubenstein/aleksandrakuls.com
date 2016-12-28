@@ -4,10 +4,10 @@ module Ak
 
     attr_accessor :title, :yt_id, :language
 
-    def initialize(title:, yt_id:, language:)
-      @title = title
-      @yt_id = yt_id
-      @language = language
+    def initialize(params)
+      @title = params[:title]
+      @yt_id = params[:yt_id]
+      @language = params[:language]
     end
   end
 end
