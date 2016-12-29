@@ -35,4 +35,4 @@ Business Logic is covered by set of Value Objects and Repositories to retrieve t
 The reason to introduce separate layers is to allow swapping each of them easily.
 
 ### The Project evolution
-How the project evolves is a very interesting story. I started with a static middleman website. Due to rare but frequent content updates, part of the content is keeping in an external database. During the page build, so converting to static html files, data are dynamically pulled from a remote database. With a Repository layer already provided, all I needed was to write a remote database adapter.
+How the project evolves is a very interesting story. I started with a static middleman website. Due to rare yet regular content updates, part of the content is keeping in an external database. During the page build, so converting to static html files, data are dynamically pulled from a remote database. With a Repository layer already provided, all I needed was to write a remote database adapter.
