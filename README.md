@@ -25,15 +25,14 @@ The Project was refactored to keep separation between:
 * persistance mechanism
 * view layer.
 
-Middleman is a view layer without any yml like data embedded. Since whole logic sits outside of Middleman a glue layer was provided in form of data access helpers.
+In the project, the Middleman part is a view layer without embedding any yml-like data. Since whole logic sits outside of Middleman, a glue layer was provided in a form of data access helpers.
 
-Persistence is done by pluggable adapters to data repositories. Currently there are two adapters, YmlAdapter (used for normal application runs) and MemoryAdapter (for easier testing).
+Persistence is done by pluggable adapters that are used by data repositories. Currently there are three adapters, YmlAdapter (used for normal application runs), MongoDB adapter (to outsource some data to external db) and MemoryAdapter (for easier testing).
 
 Business Logic is covered by set of Value Objects and Repositories to retrieve them.
 
 ### Reasons
 The reason to introduce separate layers is to allow swapping each of them easily.
 
-Two possible scenarios of grow are considered:
-* Bind real database with modificable data from outside (admin panel), and rebuild page to static files using middleman
-* Switch to runtime execution solution done by some framework
+### The Project evolution
+How the project evolves is a very interesting story. I started with a static middleman website. Due to rare but frequent content updates, part of the content is keeping in an external database. During the page build, so converting to static html files, data are dynamically pulled from a remote database. With a Repository layer already provided, all I needed was to write a remote database adapter.
